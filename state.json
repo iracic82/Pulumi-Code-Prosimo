@@ -1,0 +1,2385 @@
+{
+    "version": 3,
+    "deployment": {
+        "manifest": {
+            "time": "2023-12-22T06:20:13.38860993-05:00",
+            "magic": "93c4ba5b44ddc2d598a97cf35d5ebd301b4010f6f6a7b7708471eb84fb06ad4e",
+            "version": "v3.99.0"
+        },
+        "secrets_providers": {
+            "type": "service",
+            "state": {
+                "url": "https://api.pulumi.com",
+                "owner": "iracic82",
+                "project": "Igor-Pulumi",
+                "stack": "dev"
+            }
+        },
+        "resources": [
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "custom": false,
+                "type": "pulumi:pulumi:Stack",
+                "created": "2023-12-22T11:09:13.823100959Z",
+                "modified": "2023-12-22T11:09:13.823100959Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi/runtime/stack.py#137"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default",
+                "custom": true,
+                "id": "e63cbdc9-c614-4e95-9ac2-70333ab47d6d",
+                "type": "pulumi:providers:aws",
+                "inputs": {
+                    "skipCredentialsValidation": "false",
+                    "skipMetadataApiCheck": "true",
+                    "skipRegionValidation": "true",
+                    "version": "6.15.0"
+                },
+                "outputs": {
+                    "skipCredentialsValidation": "false",
+                    "skipMetadataApiCheck": "true",
+                    "skipRegionValidation": "true",
+                    "version": "6.15.0"
+                },
+                "created": "2023-12-22T11:09:14.129128282Z",
+                "modified": "2023-12-22T11:09:14.129128282Z"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::aws-provider",
+                "custom": true,
+                "id": "1fe106cb-8ca9-4f26-a3b4-732e934fd2b3",
+                "type": "pulumi:providers:aws",
+                "inputs": {
+                    "region": "us-east-1",
+                    "skipCredentialsValidation": "false",
+                    "skipMetadataApiCheck": "true",
+                    "skipRegionValidation": "true",
+                    "version": "6.15.0"
+                },
+                "outputs": {
+                    "region": "us-east-1",
+                    "skipCredentialsValidation": "false",
+                    "skipMetadataApiCheck": "true",
+                    "skipRegionValidation": "true",
+                    "version": "6.15.0"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "propertyDependencies": {
+                    "region": null,
+                    "skipCredentialsValidation": null,
+                    "skipMetadataApiCheck": null,
+                    "skipRegionValidation": null
+                },
+                "created": "2023-12-22T11:09:15.863955707Z",
+                "modified": "2023-12-22T11:09:15.863955707Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/provider.py#744"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::custom:module:AwsInfrastructure::aws-infra-us-east-1-VPC1",
+                "custom": false,
+                "type": "custom:module:AwsInfrastructure",
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "created": "2023-12-22T11:09:16.820806693Z",
+                "modified": "2023-12-22T11:09:16.820806693Z",
+                "sourcePosition": "project:///__main__.py#18"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0",
+                "custom": true,
+                "id": "a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "type": "pulumi:providers:aws",
+                "inputs": {
+                    "skipCredentialsValidation": "false",
+                    "skipMetadataApiCheck": "true",
+                    "skipRegionValidation": "true",
+                    "version": "6.15.0"
+                },
+                "outputs": {
+                    "skipCredentialsValidation": "false",
+                    "skipMetadataApiCheck": "true",
+                    "skipRegionValidation": "true",
+                    "version": "6.15.0"
+                },
+                "created": "2023-12-22T11:09:17.086735851Z",
+                "modified": "2023-12-22T11:09:17.086735851Z"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:tls::default_5_0_0",
+                "custom": true,
+                "id": "14bebcd1-20ad-47a8-ab7d-5c3c6a46d750",
+                "type": "pulumi:providers:tls",
+                "inputs": {
+                    "version": "5.0.0"
+                },
+                "outputs": {
+                    "version": "5.0.0"
+                },
+                "created": "2023-12-22T11:09:18.385770824Z",
+                "modified": "2023-12-22T11:09:18.385770824Z"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::custom:module:AwsInfrastructure::aws-infra-us-east-1-VPC2",
+                "custom": false,
+                "type": "custom:module:AwsInfrastructure",
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "created": "2023-12-22T11:09:19.160854984Z",
+                "modified": "2023-12-22T11:09:19.160854984Z",
+                "sourcePosition": "project:///__main__.py#18"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC1",
+                "custom": true,
+                "id": "vpc-05c966f983a6e4fb0",
+                "type": "aws:ec2/vpc:Vpc",
+                "inputs": {
+                    "__defaults": [
+                        "enableDnsSupport"
+                    ],
+                    "cidrBlock": "10.2.0.0/16",
+                    "enableDnsSupport": true,
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAL5vu4Yd7mzDSp3PxCaYC2earje4YZxD5hmCUE4sj5qah2T5ZkBzcQ0ODVzivZw1cWaAKmoyPYOiS7gGFxH+kg=="
+                    }
+                },
+                "outputs": {
+                    "__meta": "{\"schema_version\":\"1\"}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:vpc/vpc-05c966f983a6e4fb0",
+                    "assignGeneratedIpv6CidrBlock": false,
+                    "cidrBlock": "10.2.0.0/16",
+                    "defaultNetworkAclId": "acl-0878dce9ccb15f3c1",
+                    "defaultRouteTableId": "rtb-058a117e15c4801ee",
+                    "defaultSecurityGroupId": "sg-00fd6c7f81353bff0",
+                    "dhcpOptionsId": "dopt-5cf7fd37",
+                    "enableDnsHostnames": false,
+                    "enableDnsSupport": true,
+                    "enableNetworkAddressUsageMetrics": false,
+                    "id": "vpc-05c966f983a6e4fb0",
+                    "instanceTenancy": "default",
+                    "ipv6AssociationId": "",
+                    "ipv6CidrBlock": "",
+                    "ipv6CidrBlockNetworkBorderGroup": "",
+                    "ipv6IpamPoolId": "",
+                    "ipv6NetmaskLength": 0,
+                    "mainRouteTableId": "rtb-058a117e15c4801ee",
+                    "ownerId": "688664532084",
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABALHnaU3qVKvj0Tnz3GobVEJO0zPecqkMl4SDE/PTgge2/JwuuGswcyM7a0sSmj3GyMqgVD3uwWY1dX+RO8TZIA=="
+                    }
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "cidrBlock": null,
+                    "tags": null
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:19.581003249Z",
+                "modified": "2023-12-22T11:09:19.581003249Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/vpc.py#765"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::tls:index/privateKey:PrivateKey::aws-infra-us-east-1-VPC1-rsa-key",
+                "custom": true,
+                "id": "945f41f60c84f6aa29cc2a2c9e039e4fb991e3bf",
+                "type": "tls:index/privateKey:PrivateKey",
+                "inputs": {
+                    "algorithm": "RSA",
+                    "rsaBits": 4096
+                },
+                "outputs": {
+                    "__meta": "{\"schema_version\":\"1\"}",
+                    "algorithm": "RSA",
+                    "ecdsaCurve": "P224",
+                    "id": "945f41f60c84f6aa29cc2a2c9e039e4fb991e3bf",
+                    "privateKeyOpenssh": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "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"
+                    },
+                    "privateKeyPem": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "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"
+                    },
+                    "privateKeyPemPkcs8": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "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"
+                    },
+                    "publicKeyFingerprintMd5": "59:c8:f5:99:48:75:0c:d5:67:b6:52:ae:b1:59:a8:4f",
+                    "publicKeyFingerprintSha256": "SHA256:n5xwnRBPAf2q9rhj5EhQtwqMNKLJJNDSGL7CowEazZU",
+                    "publicKeyOpenssh": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjmtNQnYwFl9bkUVMZOvRiXmAXTOg881YN4/yVxAAO2mKvkxokEoRj5Mf81CwrSVu3pcua9UiRgJNz59ibuQiC5jcobq5cZTDIzKoARW58gGADCCd8enacI3kxTnwutdYLAr6tPVmPKKKbC18FyMxp0PTARza6Di45TFTC593ZR6aPMj+nFkouvlDLOITi1taSC5fAT6Ap5ctIlqqIjDHyzgpeSgAH67NmSywwIP2YeyeJEwOFUW5KG/Z5PUZY3yFBkdLNusEzTmJid2aL+gVpZ1eyyoowdsThQPyir4GXpO//SfJzIAj1HpFa3yESpBNF7oVQDB1tXnqoZ4gj6fyUg7WRzfxRLpKLsx+Y4ILYcb2SGZRpf/cXF3o25q1Ni0WDEI7c7C28A4BAIpA26mkBkpW3UfFK2PXca8e1+ClPbu9lELUZVIOdIUcxRQ9LAMmYX+Cc3LP1Gorm/TeSjvDNlHSMv94FEWsCwLXBXnRngLk8MokVDUYFVbzn+NuXM/3tTxbfm7ksFk5BM/qm+lAy+/7yzzviTei7r3V/iq4S4lffe6odlTR4XNla5odcd1TsnukCK4z+xardIvr+iQiT/FUXvSkzErgks58N/7NzGgzyPae722nh5zXMK9088o88Stxa+Dzaqj6zPzkjYbQHJCXwhTmvBP8wMHDNS7REiw==\n",
+                    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA45rTUJ2MBZfW5FFTGTr0\nYl5gF0zoPPNWDeP8lcQADtpir5MaJBKEY+TH/NQsK0lbt6XLmvVIkYCTc+fYm7kI\nguY3KG6uXGUwyMyqAEVufIBgAwgnfHp2nCN5MU58LrXWCwK+rT1ZjyiimwtfBcjM\nadD0wEc2ug4uOUxUwufd2UemjzI/pxZKLr5QyziE4tbWkguXwE+gKeXLSJaqiIwx\n8s4KXkoAB+uzZkssMCD9mHsniRMDhVFuShv2eT1GWN8hQZHSzbrBM05iYndmi/oF\naWdXssqKMHbE4UD8oq+Bl6Tv/0nycyAI9R6RWt8hEqQTRe6FUAwdbV56qGeII+n8\nlIO1kc38US6Si7MfmOCC2HG9khmUaX/3Fxd6NuatTYtFgxCO3OwtvAOAQCKQNupp\nAZKVt1HxStj13GvHtfgpT27vZRC1GVSDnSFHMUUPSwDJmF/gnNyz9RqK5v03ko7w\nzZR0jL/eBRFrAsC1wV50Z4C5PDKJFQ1GBVW85/jblzP97U8W35u5LBZOQTP6pvpQ\nMvv+8s874k3ou691f4quEuJX33uqHZU0eFzZWuaHXHdU7J7pAiuM/sWq3SL6/okI\nk/xVF70pMxK4JLOfDf+zcxoM8j2nu9tp4ec1zCvdPPKPPErcWvg82qo+sz85I2G0\nByQl8IU5rwT/MDBwzUu0RIsCAwEAAQ==\n-----END PUBLIC KEY-----\n",
+                    "rsaBits": 4096
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:tls::default_5_0_0::14bebcd1-20ad-47a8-ab7d-5c3c6a46d750",
+                "propertyDependencies": {
+                    "algorithm": null,
+                    "rsaBits": null
+                },
+                "additionalSecretOutputs": [
+                    "privateKeyOpenssh",
+                    "privateKeyPem",
+                    "privateKeyPemPkcs8"
+                ],
+                "created": "2023-12-22T11:09:20.697856536Z",
+                "modified": "2023-12-22T11:09:20.697856536Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_tls/private_key.py#272"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC2",
+                "custom": true,
+                "id": "vpc-0093370e123e0d5ef",
+                "type": "aws:ec2/vpc:Vpc",
+                "inputs": {
+                    "__defaults": [
+                        "enableDnsSupport"
+                    ],
+                    "cidrBlock": "10.3.0.0/16",
+                    "enableDnsSupport": true,
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC2"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAAQ5cA3dkt0c2hBOrKAHDhrzJxIdYBuD8GzWfCRynJ1c8O02KelXm8zkXh32Q+ujGfaA2OlR2m4bc4iBjNolHg=="
+                    }
+                },
+                "outputs": {
+                    "__meta": "{\"schema_version\":\"1\"}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:vpc/vpc-0093370e123e0d5ef",
+                    "assignGeneratedIpv6CidrBlock": false,
+                    "cidrBlock": "10.3.0.0/16",
+                    "defaultNetworkAclId": "acl-0a90fc0d51f56d347",
+                    "defaultRouteTableId": "rtb-076fb7d6990405f3c",
+                    "defaultSecurityGroupId": "sg-017911efe6ff77fd9",
+                    "dhcpOptionsId": "dopt-5cf7fd37",
+                    "enableDnsHostnames": false,
+                    "enableDnsSupport": true,
+                    "enableNetworkAddressUsageMetrics": false,
+                    "id": "vpc-0093370e123e0d5ef",
+                    "instanceTenancy": "default",
+                    "ipv6AssociationId": "",
+                    "ipv6CidrBlock": "",
+                    "ipv6CidrBlockNetworkBorderGroup": "",
+                    "ipv6IpamPoolId": "",
+                    "ipv6NetmaskLength": 0,
+                    "mainRouteTableId": "rtb-076fb7d6990405f3c",
+                    "ownerId": "688664532084",
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC2"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAAn9ioQgxMRhu2VLqGHUuuvVW5j6q7NcX+9wxuvBRhoDTuJqx+l6NgRvc1mDxCVxd+JLefxx4GKm4WAYtU6CiQ=="
+                    }
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "cidrBlock": null,
+                    "tags": null
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:20.705167897Z",
+                "modified": "2023-12-22T11:09:20.705167897Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/vpc.py#765"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::tls:index/privateKey:PrivateKey::aws-infra-us-east-1-VPC2-rsa-key",
+                "custom": true,
+                "id": "cc291ced3f8f9333d4869a87368b84d417cd0224",
+                "type": "tls:index/privateKey:PrivateKey",
+                "inputs": {
+                    "algorithm": "RSA",
+                    "rsaBits": 4096
+                },
+                "outputs": {
+                    "__meta": "{\"schema_version\":\"1\"}",
+                    "algorithm": "RSA",
+                    "ecdsaCurve": "P224",
+                    "id": "cc291ced3f8f9333d4869a87368b84d417cd0224",
+                    "privateKeyOpenssh": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "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"
+                    },
+                    "privateKeyPem": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "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"
+                    },
+                    "privateKeyPemPkcs8": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAOdJ0rXiRq8bt018Zt6GoTIJP/S16iOBMLfHWMhp8HkQzzwfzJci2K0olJCcZ3OrMNuEptavHkjR2sEz/aJvZSdm54kjiOrXVNYBq81yS1GsnHXcHdXKFASStFpXkPWvVBXRaFTmdCwl88x3Hogq0LNTESAZCX6nbLCdw/XIQnLLC6SP8eE9lqqnSgPI1Uyp4QBmd0zSm5WI+0+xzNBNTYpaIw5iqUHoCVldSiyA0EtEJE2XdAXGppeF07HaXOLdEeERujmMcrBgq51PvZrqN861MWT/5lblZrQifY7yPGnhMdb7t3YL4l/y3Rz1xt43VAB5AEOaqlHSsTo5Vhdof5EgHxhK3Tb1HC13WLIBdMakcj3z9DlyAcPr3NcgJWqVULTkz9R17zV+S6o5i2IKDeKLih+X9a4a0iBTHPUsMhjVlRLa0VdafZBfdD5zpm5WQTydizOWG7rWE0lBBs52Zf4rrmRKjMZNTiZlGTkBYhRCzOOMs8yXnt5jh657l9d+RQiBsV22+n9Fp/+6rUTPhAYmnUu2FFs+x4vINdqlkxQE2tA/mACRV0P47EX5L7bLjkbNIjtpo6DVHNjz/mPeOuSMfdF3e9LDR8B0OR0WoDxyOTUFWnLjzBXsna+hR8cd/6Y6hc3DwY5InLwBOiYwbjSsEJkNvsN00vfTlvCnM4qD+x4FCTFNSH3aSDddcryhFsAdWyVKBzKDieZlGfJOd12IBfJNfFTXItr/x5ZylcYW9i7VkLqmPu1ttHs/Vaer/5YElcNZp1C0xejXNFkkVRfvaUEpSFwYIkb6+SkPxgDTx5b1xz7jMZmiQtMF4n2Ar2gdB2/dcRt19VwijKCJlvHyIBfYR6DKyN02kjx129sj8PiyZQS65Q9ZPmOECJNGRsLRF4L8FaKjeSjGeVe/dnT38DXM+IGXnQiqJ3TZ0d9PMjvHbCDvp9iAGsNNKezVqFYUwNYamBgNasv/HzyOb4BlswQbtfQXAbrOPUqB3D6PrJ3dyXDqEjf7IYmqxjjBD233dhbIfRgKUAJ7XktyNEmWgrYiOMbJufc8jSVDvxjuN54ccf0h8HrrxUSou6Al5JquaOiKfYpShAkYdDZGDOnTSZEyqKlh2ZymTuKeL+SVWz6kbKefoRaFHHtermJandTUmr1gxvD4tIbCEMk5pg/ULT344Vx+cXc/qEZZwDdNXEQEy2IeOhBNE1ouPlRjWEGVt+hieXPDFV3mLl2sxxu3RQ2RAvEItwLj0xgjkPDCbEK5x0NdFL4pA0fT8oJPTYoG1iDd67NVAORQHHYV9bNaw69/WMtPg9zeqzg5EYpB5QUm3AX0W86HPTY99dBCld+t8OgVKKTgGmiR4w2s0QaFMEAs3cfrGIoEUohYuj9Ai8BQy89r0my1VIgNzOPTfjIud1CRbCnLjNSIsYv5/8h1iBoLQpXIuJdqdMypEahPJQgVn0UfSO90fl5ja8jd43T0eevd7GjkRTYPJRDeHmI/smp+yyQyDkniRCs4+CG+Yi9G8IpKTpioxwm3M4k7xO5KJzbcJREQOgzwPKd3vurUyZK4GFgdPWZeM2elJE7qmcVArvcEyPy2mktLdLp2RiHMvC/E+VNi1bwL53Qw1h6Yf4GdiGu/GQ8LQLeiQAmOXq0CUQz1tdmEruo0b8oVhofybMuRkfAffkklT6F6ncOwCAUuBTbqjzBQKO3rQ0PiyezLJXj0VIhYb/1jmnAz8u6U2pRyYYwI2Sux4bC00Nzd6r97vB7/5jAkMMW4C92k1vV37kfHQdFQSqDFnceXm6IT7fhcjfpjIfjHzN0pcgatFQR+0yEkvJ2fMrs1CwcAz+qBtGIlyhqaHJBLEoTPJpSB6LwwwYOuiiNWiq/ahibVJLocpR5fe4NXgHzW4hyOrsp0HrykRyrckSu5G74okOdbv9+MAKoWzowwenEtX1COG6tX8gDWPL+5GgasBluJi7b/5L8qOB7aB6cHpqMLAs3GxR4JMwEZ5IdiTPV8BeXrsdLPoRE0rrcQ9o/unMv7bdKYypgXYEC3MO7q+ybw98IuevCMLA1s9Wke+uS2ik3NQ/8eVDWtzpylQHHtqa/0q6X047dphFul0Q0t+RcUm/0mzzLE8LhItF268q09Y/YsKzEMxyq1fXQZsyFL9rXniRmjdYzlSmf/THkFcfDdbZdPAYKjAs9sD9ERcFLa+YB2ctS2uqPny+ImXDMUKiIF93zRP7voQjxD8SZW0p0rC/pyT8mX5Ooufutd0vu0xrfrng83JCWwd6s3aAqQSitji6F9zSMi6fPwwUjHQoxZkg9vUGpWAvuplYm/863/ig1WzPMJA6OgH9pPs500cx1eQVvisZ/E+8LW3KqQWZrIJNBvhL2JxvmdpEzaZqHG2UBjTjrNNgqlfH4dL2vo16QgYtfDL9EGr1Afe6WACxd3BvHMgFMgIVWhAGb7cXpcPne5NwTNOi88BnvHiB1Z5mCLu0Af0d46BoFnvHGP4VGswgOpmCWdEfwb8tL/aWLEMk7QrI5X7cwe+czJwmjA0g/Ul9SlgqhPlvw+XuS2IwrO+V4I66Dsu4zILlPnNcj2fbrahuo9BKGGt7cIyI1VPdtH2Z3ekxUdrTzelQbbeNJ6hJFUAxEtAiW4akJkjnwtvFcj09+wYAlXvt6MXfRJt/qH06xP8QcwRkb0C5DuC9iwTvlXPOqq//XdEUQTqxDO1tDkwC+T1JKytDVFaFUBNdHz64qECVM9VvVEJrEuoJQVahOWreQymlzSs9Db5lLRnO3WrO/JXHkVF46bZMtA+WUQVjU+l1xy7B3T9m0IGi1/C3sA5MlK5J4WzfuNVol5dRWGizktLFGw3XB3wKtQDizeMTikiCCs96B3gJiiFZHaLxhIgEJkYVZL8WPbGWBDlJXFUNP8g1LBl7WtkdHkVisIGAO+d+Y0B/0LjEa1Vcl1q0WSu9rHtDlXiYAnY4g+l5g9RHCZO1mgw6Rjx1ZSrVOfl3vVhcjF9GS1TyXpFK7DCB6WccFv1p4pHMErfs6l7Z+oK/CFzcvWw+CXm7HxKfNBQqAq5IaAufQ31Q3GV5il7pYkb1KqS6ea7KTF6Dj6PZY027LUm+Hz8p8R8IGdPeMuYZGujvUuWg2k45CA4iT1vcaC6YNpvf1BdBwV0hV1LBNLjajelnKySI07FSUqx5UZXQAzXDVOfmjqUoEQawUP3/Awt/cMi6kkO31P7tCsK2DEFxGi6TiEWTD4T+RXmPMTW5gxZq9WOa0NIZs0zlj1LRg54FMUEUV6fZkqb+e9alIplBhjpO7h8wp7IZ0BbnZe+KYzdjztJtCSRiK0P91Ac/KhYnW/d40GDWnZcz8h2WK6rvsARYjWBASUzFjWmz/AhoRWS6TFNLUU+qobOJSdN8Mk/WOW6hmnvLCukhQPIwGu5EfSL7zrbYEn7e6WWYg1gmAAd+oQ0/QM5FOICCEmQHWM0n4sRhJq4W3p81XpzibyCbXJVE0uVMj09YLXQKnn0dfIjo6cqMAU/CzDVy2+dNaGwofVkCHoKSEc2DwUGL2C00kdJWg5c45tvRySVcrPt7tnciWq/bc81QJj7VOR0fOCzUTH6ycdLcenSfh/+2NcFplX8NnwSv76EuYRB34vMDRNYO5Xf83ytc6oIK1KRVFkM9ZZaLVh8Ku68BvI/hnQLPvicb2ztD/cEvPmeiaT2JUm1mqijCutXyROWC3wjcyqai09VUMDOq6imw94cjz54OXepL1X5Q+S8RufubBPnbpyikbMIFez7mupPKegqbkV0iEPXEn0whG0O4N8lkxIuCNDchth7dm/Gr3GVZGomJAxrmH+wdJ+4exjiai9WQ4pgP3782CsXIMn2PJV2Bd9QDOe5r/f43TwgEmbfg1+m2c4ptR7idZ7rQR69XuKk+AO/poOxjfVLyGzTEwzlAXjja8quVsi5QalDAAEk5JEeoGZtxEGvDzud0wf4cghiARWm+bVsz6P7QjfX00IqpF/VLojnYT6YlDWngYQT4Kcy2hTfSGIjFzmncv91ZAqvfzW5vCB0DmuNryBXowvxkkt6+czo0XWIeQpJi0+1bDI9WvSy1uXNeQbzowkiAFCKc/E6034YlVa90nSbDO7fyyWX00wVT5bULYIC/BKrltzsffMnOgponbTv3LKljWvqQFqTk2yidvylJ8pFbrXt4G7sRtzlsiyqg5Zsl1mIbUB301uNSnX2yJZ1Oro1ZdjmStoFGooTy1l2K9KG/QQnr9pKjIchrgXIiQuZHm2Z/NeHl5j2VOOthfw3+wgOklY42aPCJv50wxNWU6Al6eUvnGr9aZbCR2r1XcIJFGEbKUfImgVeyxU6fc634gRlKXFEya7G7PDLx7aqZTXcPABUJsFH/ESpusA7coRuwMq34eipdkUaJZAgWdnPglz9XGn3zjU54NysLQIp/i2cVfDf1zKger4VQRFkbgQDRj6Ki/CVbFepg3IW/oleg=="
+                    },
+                    "publicKeyFingerprintMd5": "0e:f9:9f:bc:59:0b:10:cf:5c:c3:00:6e:47:8d:00:f2",
+                    "publicKeyFingerprintSha256": "SHA256:FMnRsVkSoO74UqZQtT8zWJHetf0YDbmun1bwpLcHfUY",
+                    "publicKeyOpenssh": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCumKqCg5jT8N9QzzjKnaKHTF4KLhSILE0mekvIMjP1HQMgTHf2FWFmQmVSiD7ab1qAiPBGjPccXCWeNOSLCwyBk3BmTnNEX4c0gbykY0U6C365FUQ1gEGB9AMCUjagyWxwSvVP01jzHJgSHUUA4XObxxVdVAP7iDtVoFBkXdbaIlu22OpBQqShozHxmEC1yBlU5cPAC9jHVICXs/ThofANFGqY0cUDMsVzYXxIKqUXxHwzBbqjf65bjX1d6rG5QY8pQDxJxk2qZ7i9iVXyQTX58lJ/coy1bg6DjCBPFAgHpZH/E/LEFbZATABDNMhtayIknNKirdZLA2HFx4DTvdygY6z+HIFJTXO/u87A9wY8snbaInK/SBHmhqU/Phyhy5ux8jfSeGjFVb3A36jP83+pmqSpJ7CZR1gHHuKVFC5qPSizqJd3NSanTLni/LtpvuKsC18q2wxP0hv90lSCFgQ9JWaAbH8lYVv1Xn1JoyLwyi1Dy7gvINCuNGz143zCLwZiRHCcYcyW+Jd0lDJ1AkLHAOh0Vqu6eiSYHnQLtWump/YEB8WettNMRsyxwB8V3DoynaEGfPz6A8PajXZ4MOvGBsPaWgAYnMA/ltSaw12b2JXRSbCSaiPL3+8BxLaXCf3Q2tzjcnAk8saeROndqP+AogQddSzxM+8Wx4SFc5ZzLQ==\n",
+                    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArpiqgoOY0/DfUM84yp2i\nh0xeCi4UiCxNJnpLyDIz9R0DIEx39hVhZkJlUog+2m9agIjwRoz3HFwlnjTkiwsM\ngZNwZk5zRF+HNIG8pGNFOgt+uRVENYBBgfQDAlI2oMlscEr1T9NY8xyYEh1FAOFz\nm8cVXVQD+4g7VaBQZF3W2iJbttjqQUKkoaMx8ZhAtcgZVOXDwAvYx1SAl7P04aHw\nDRRqmNHFAzLFc2F8SCqlF8R8MwW6o3+uW419XeqxuUGPKUA8ScZNqme4vYlV8kE1\n+fJSf3KMtW4Og4wgTxQIB6WR/xPyxBW2QEwAQzTIbWsiJJzSoq3WSwNhxceA073c\noGOs/hyBSU1zv7vOwPcGPLJ22iJyv0gR5oalPz4cocubsfI30nhoxVW9wN+oz/N/\nqZqkqSewmUdYBx7ilRQuaj0os6iXdzUmp0y54vy7ab7irAtfKtsMT9Ib/dJUghYE\nPSVmgGx/JWFb9V59SaMi8MotQ8u4LyDQrjRs9eN8wi8GYkRwnGHMlviXdJQydQJC\nxwDodFarunokmB50C7Vrpqf2BAfFnrbTTEbMscAfFdw6Mp2hBnz8+gPD2o12eDDr\nxgbD2loAGJzAP5bUmsNdm9iV0Umwkmojy9/vAcS2lwn90Nrc43JwJPLGnkTp3aj/\ngKIEHXUs8TPvFseEhXOWcy0CAwEAAQ==\n-----END PUBLIC KEY-----\n",
+                    "rsaBits": 4096
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:tls::default_5_0_0::14bebcd1-20ad-47a8-ab7d-5c3c6a46d750",
+                "propertyDependencies": {
+                    "algorithm": null,
+                    "rsaBits": null
+                },
+                "additionalSecretOutputs": [
+                    "privateKeyOpenssh",
+                    "privateKeyPem",
+                    "privateKeyPemPkcs8"
+                ],
+                "created": "2023-12-22T11:09:21.738265295Z",
+                "modified": "2023-12-22T11:09:21.738265295Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_tls/private_key.py#272"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC1-subnet-1",
+                "custom": true,
+                "id": "subnet-0434d2e54cf1b03ba",
+                "type": "aws:ec2/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "assignIpv6AddressOnCreation",
+                        "enableDns64",
+                        "enableResourceNameDnsARecordOnLaunch",
+                        "enableResourceNameDnsAaaaRecordOnLaunch",
+                        "ipv6Native",
+                        "mapPublicIpOnLaunch"
+                    ],
+                    "assignIpv6AddressOnCreation": false,
+                    "availabilityZone": "eu-central-1a",
+                    "cidrBlock": "10.2.2.0/24",
+                    "enableDns64": false,
+                    "enableResourceNameDnsARecordOnLaunch": false,
+                    "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                    "ipv6Native": false,
+                    "mapPublicIpOnLaunch": false,
+                    "tags": {
+                        "Name": "WebSvcsProdEu-subnet2"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAHIti9lMcxaPHxR8aBBM+k6SX1Y7v+XMqB9nTbmu5aaVtA0QyoeStfY+urM4HMUfgUDbA3JPp09prJP/dg=="
+                    },
+                    "vpcId": "vpc-05c966f983a6e4fb0"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000},\"schema_version\":\"1\"}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:subnet/subnet-0434d2e54cf1b03ba",
+                    "assignIpv6AddressOnCreation": false,
+                    "availabilityZone": "eu-central-1a",
+                    "availabilityZoneId": "euc1-az2",
+                    "cidrBlock": "10.2.2.0/24",
+                    "customerOwnedIpv4Pool": "",
+                    "enableDns64": false,
+                    "enableLniAtDeviceIndex": 0,
+                    "enableResourceNameDnsARecordOnLaunch": false,
+                    "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                    "id": "subnet-0434d2e54cf1b03ba",
+                    "ipv6CidrBlock": "",
+                    "ipv6CidrBlockAssociationId": "",
+                    "ipv6Native": false,
+                    "mapCustomerOwnedIpOnLaunch": false,
+                    "mapPublicIpOnLaunch": false,
+                    "outpostArn": "",
+                    "ownerId": "688664532084",
+                    "privateDnsHostnameTypeOnLaunch": "ip-name",
+                    "tags": {
+                        "Name": "WebSvcsProdEu-subnet2"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAP8jRrBPIfAKVdA8P+zNhPKs5InOjKI2/WFec5ayh88DNkhLWCwrSe0q7ewCwe681dirQoMSkHeFAPNFgw=="
+                    },
+                    "vpcId": "vpc-05c966f983a6e4fb0"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC1"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "availabilityZone": null,
+                    "cidrBlock": null,
+                    "tags": null,
+                    "vpcId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC1"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:24.811908385Z",
+                "modified": "2023-12-22T11:09:24.811908385Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/subnet.py#815"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC1-subnet-0",
+                "custom": true,
+                "id": "subnet-0206841d1407a477a",
+                "type": "aws:ec2/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "assignIpv6AddressOnCreation",
+                        "enableDns64",
+                        "enableResourceNameDnsARecordOnLaunch",
+                        "enableResourceNameDnsAaaaRecordOnLaunch",
+                        "ipv6Native",
+                        "mapPublicIpOnLaunch"
+                    ],
+                    "assignIpv6AddressOnCreation": false,
+                    "availabilityZone": "eu-central-1a",
+                    "cidrBlock": "10.2.1.0/24",
+                    "enableDns64": false,
+                    "enableResourceNameDnsARecordOnLaunch": false,
+                    "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                    "ipv6Native": false,
+                    "mapPublicIpOnLaunch": false,
+                    "tags": {
+                        "Name": "WebSvcsProdEu-subnet1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAPbmnn3GNBH0KfuGYMmEcwM1Tm+1MXzTK9IpF6dKVK7o8xj0L3NwAKIn1TUqqYkFtQPIKlo4kjGGAaXT8A=="
+                    },
+                    "vpcId": "vpc-05c966f983a6e4fb0"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000},\"schema_version\":\"1\"}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:subnet/subnet-0206841d1407a477a",
+                    "assignIpv6AddressOnCreation": false,
+                    "availabilityZone": "eu-central-1a",
+                    "availabilityZoneId": "euc1-az2",
+                    "cidrBlock": "10.2.1.0/24",
+                    "customerOwnedIpv4Pool": "",
+                    "enableDns64": false,
+                    "enableLniAtDeviceIndex": 0,
+                    "enableResourceNameDnsARecordOnLaunch": false,
+                    "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                    "id": "subnet-0206841d1407a477a",
+                    "ipv6CidrBlock": "",
+                    "ipv6CidrBlockAssociationId": "",
+                    "ipv6Native": false,
+                    "mapCustomerOwnedIpOnLaunch": false,
+                    "mapPublicIpOnLaunch": false,
+                    "outpostArn": "",
+                    "ownerId": "688664532084",
+                    "privateDnsHostnameTypeOnLaunch": "ip-name",
+                    "tags": {
+                        "Name": "WebSvcsProdEu-subnet1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAKAfLTsanKW2UKiAhAuxeO0TSDC5PnNSTguzrqw9ST8cdhzRa/EEcBTDeUwk4pXkCBSb5jFxm9cyjEaqzA=="
+                    },
+                    "vpcId": "vpc-05c966f983a6e4fb0"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC1"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "availabilityZone": null,
+                    "cidrBlock": null,
+                    "tags": null,
+                    "vpcId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC1"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:25.167827264Z",
+                "modified": "2023-12-22T11:09:25.167827264Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/subnet.py#815"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/internetGateway:InternetGateway::aws-infra-us-east-1-VPC1",
+                "custom": true,
+                "id": "igw-02c7d35eedf051734",
+                "type": "aws:ec2/internetGateway:InternetGateway",
+                "inputs": {
+                    "__defaults": [],
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAKaRzI9MJCLQKP+0KnKpcSKXtz1cgrs6ercEzL+3XXnOsg+twWo0RD6tCWrmO0GLp8/I2vI6yfNySHfBzbBVcQ=="
+                    },
+                    "vpcId": "vpc-05c966f983a6e4fb0"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":1200000000000,\"update\":1200000000000}}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:internet-gateway/igw-02c7d35eedf051734",
+                    "id": "igw-02c7d35eedf051734",
+                    "ownerId": "688664532084",
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAG7SEJdzlSjHJ0MNyqEc3+iDgYEjhDxnTG4v0rq3vmEMAo3rZDHrt+6LuIS1rsvM+LSRsVUv/SkpkqCBCXurVg=="
+                    },
+                    "vpcId": "vpc-05c966f983a6e4fb0"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC1"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "tags": null,
+                    "vpcId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC1"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:25.527168056Z",
+                "modified": "2023-12-22T11:09:25.527168056Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/internet_gateway.py#280"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC1",
+                "custom": true,
+                "id": "rtb-09436b3ac81466a5d",
+                "type": "aws:ec2/routeTable:RouteTable",
+                "inputs": {
+                    "__defaults": [],
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAFJdsVhwSqUzev7rCuUEG3sk8x4Ei2Z+4Lh31PJsG6o4HgUa4V7YzMlHuGvEJuKgbVISPjFXf422BpyXFE1zxw=="
+                    },
+                    "vpcId": "vpc-05c966f983a6e4fb0"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:route-table/rtb-09436b3ac81466a5d",
+                    "id": "rtb-09436b3ac81466a5d",
+                    "ownerId": "688664532084",
+                    "propagatingVgws": [],
+                    "routes": [
+                        {
+                            "carrierGatewayId": "",
+                            "cidrBlock": "0.0.0.0/0",
+                            "coreNetworkArn": "",
+                            "destinationPrefixListId": "",
+                            "egressOnlyGatewayId": "",
+                            "gatewayId": "igw-02c7d35eedf051734",
+                            "ipv6CidrBlock": "",
+                            "localGatewayId": "",
+                            "natGatewayId": "",
+                            "networkInterfaceId": "",
+                            "transitGatewayId": "",
+                            "vpcEndpointId": "",
+                            "vpcPeeringConnectionId": ""
+                        }
+                    ],
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABABcBZSYH8KXLmQ9I17ZjBrO+rmkGH6JxPZdMZ47fkfZh5qIye7q798kGfPvOOVNq87kH8n51wMEu0rGHNZ7LXw=="
+                    },
+                    "vpcId": "vpc-05c966f983a6e4fb0"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC1"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "tags": null,
+                    "vpcId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC1"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:26.691403948Z",
+                "modified": "2023-12-22T11:20:12.18174871Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/route_table.py#465"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/keyPair:KeyPair::US_EAST_WebSvcsProd",
+                "custom": true,
+                "id": "US_EAST_WebSvcsProd-0c33bfd",
+                "type": "aws:ec2/keyPair:KeyPair",
+                "inputs": {
+                    "__defaults": [
+                        "keyName"
+                    ],
+                    "keyName": "US_EAST_WebSvcsProd-0c33bfd",
+                    "publicKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjmtNQnYwFl9bkUVMZOvRiXmAXTOg881YN4/yVxAAO2mKvkxokEoRj5Mf81CwrSVu3pcua9UiRgJNz59ibuQiC5jcobq5cZTDIzKoARW58gGADCCd8enacI3kxTnwutdYLAr6tPVmPKKKbC18FyMxp0PTARza6Di45TFTC593ZR6aPMj+nFkouvlDLOITi1taSC5fAT6Ap5ctIlqqIjDHyzgpeSgAH67NmSywwIP2YeyeJEwOFUW5KG/Z5PUZY3yFBkdLNusEzTmJid2aL+gVpZ1eyyoowdsThQPyir4GXpO//SfJzIAj1HpFa3yESpBNF7oVQDB1tXnqoZ4gj6fyUg7WRzfxRLpKLsx+Y4ILYcb2SGZRpf/cXF3o25q1Ni0WDEI7c7C28A4BAIpA26mkBkpW3UfFK2PXca8e1+ClPbu9lELUZVIOdIUcxRQ9LAMmYX+Cc3LP1Gorm/TeSjvDNlHSMv94FEWsCwLXBXnRngLk8MokVDUYFVbzn+NuXM/3tTxbfm7ksFk5BM/qm+lAy+/7yzzviTei7r3V/iq4S4lffe6odlTR4XNla5odcd1TsnukCK4z+xardIvr+iQiT/FUXvSkzErgks58N/7NzGgzyPae722nh5zXMK9088o88Stxa+Dzaqj6zPzkjYbQHJCXwhTmvBP8wMHDNS7REiw==\n"
+                },
+                "outputs": {
+                    "__meta": "{\"schema_version\":\"1\"}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:key-pair/US_EAST_WebSvcsProd-0c33bfd",
+                    "fingerprint": "b7:bf:3c:f4:2e:bd:91:55:b5:3d:58:8c:66:07:6e:b6",
+                    "id": "US_EAST_WebSvcsProd-0c33bfd",
+                    "keyName": "US_EAST_WebSvcsProd-0c33bfd",
+                    "keyNamePrefix": "",
+                    "keyPairId": "key-09d4220a374916735",
+                    "keyType": "rsa",
+                    "publicKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjmtNQnYwFl9bkUVMZOvRiXmAXTOg881YN4/yVxAAO2mKvkxokEoRj5Mf81CwrSVu3pcua9UiRgJNz59ibuQiC5jcobq5cZTDIzKoARW58gGADCCd8enacI3kxTnwutdYLAr6tPVmPKKKbC18FyMxp0PTARza6Di45TFTC593ZR6aPMj+nFkouvlDLOITi1taSC5fAT6Ap5ctIlqqIjDHyzgpeSgAH67NmSywwIP2YeyeJEwOFUW5KG/Z5PUZY3yFBkdLNusEzTmJid2aL+gVpZ1eyyoowdsThQPyir4GXpO//SfJzIAj1HpFa3yESpBNF7oVQDB1tXnqoZ4gj6fyUg7WRzfxRLpKLsx+Y4ILYcb2SGZRpf/cXF3o25q1Ni0WDEI7c7C28A4BAIpA26mkBkpW3UfFK2PXca8e1+ClPbu9lELUZVIOdIUcxRQ9LAMmYX+Cc3LP1Gorm/TeSjvDNlHSMv94FEWsCwLXBXnRngLk8MokVDUYFVbzn+NuXM/3tTxbfm7ksFk5BM/qm+lAy+/7yzzviTei7r3V/iq4S4lffe6odlTR4XNla5odcd1TsnukCK4z+xardIvr+iQiT/FUXvSkzErgks58N/7NzGgzyPae722nh5zXMK9088o88Stxa+Dzaqj6zPzkjYbQHJCXwhTmvBP8wMHDNS7REiw==",
+                    "tags": {},
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAMrDYzil5oezG2RPU5VmSPH1C91h2X2AaIrxAgvAPA=="
+                    }
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::tls:index/privateKey:PrivateKey::aws-infra-us-east-1-VPC1-rsa-key"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "publicKey": [
+                        "urn:pulumi:dev::Igor-Pulumi::tls:index/privateKey:PrivateKey::aws-infra-us-east-1-VPC1-rsa-key"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:27.136872976Z",
+                "modified": "2023-12-22T11:09:27.136872976Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/key_pair.py#334"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC2-subnet-0",
+                "custom": true,
+                "id": "subnet-0d1ab74fc2d85e987",
+                "type": "aws:ec2/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "assignIpv6AddressOnCreation",
+                        "enableDns64",
+                        "enableResourceNameDnsARecordOnLaunch",
+                        "enableResourceNameDnsAaaaRecordOnLaunch",
+                        "ipv6Native",
+                        "mapPublicIpOnLaunch"
+                    ],
+                    "assignIpv6AddressOnCreation": false,
+                    "availabilityZone": "eu-central-1a",
+                    "cidrBlock": "10.3.1.0/24",
+                    "enableDns64": false,
+                    "enableResourceNameDnsARecordOnLaunch": false,
+                    "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                    "ipv6Native": false,
+                    "mapPublicIpOnLaunch": false,
+                    "tags": {
+                        "Name": "WebSvcsDevUs-subnet1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABADTVbbCvkI1hCiAPZ8PEGpdRQllEjfr3HTQtbvv37h12yJdLUmATD7GAOIT317zxLm4d5j06b6RFi1Pb"
+                    },
+                    "vpcId": "vpc-0093370e123e0d5ef"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000},\"schema_version\":\"1\"}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:subnet/subnet-0d1ab74fc2d85e987",
+                    "assignIpv6AddressOnCreation": false,
+                    "availabilityZone": "eu-central-1a",
+                    "availabilityZoneId": "euc1-az2",
+                    "cidrBlock": "10.3.1.0/24",
+                    "customerOwnedIpv4Pool": "",
+                    "enableDns64": false,
+                    "enableLniAtDeviceIndex": 0,
+                    "enableResourceNameDnsARecordOnLaunch": false,
+                    "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                    "id": "subnet-0d1ab74fc2d85e987",
+                    "ipv6CidrBlock": "",
+                    "ipv6CidrBlockAssociationId": "",
+                    "ipv6Native": false,
+                    "mapCustomerOwnedIpOnLaunch": false,
+                    "mapPublicIpOnLaunch": false,
+                    "outpostArn": "",
+                    "ownerId": "688664532084",
+                    "privateDnsHostnameTypeOnLaunch": "ip-name",
+                    "tags": {
+                        "Name": "WebSvcsDevUs-subnet1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAOIgJ1Wb6dWYutZtCg1E1wBZAMe+jyxlRme5EXQkRZv+PU5xhMpJpZCZxuM11ARV37VwjHLpE3TsNUpf"
+                    },
+                    "vpcId": "vpc-0093370e123e0d5ef"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC2"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "availabilityZone": null,
+                    "cidrBlock": null,
+                    "tags": null,
+                    "vpcId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC2"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:28.105420162Z",
+                "modified": "2023-12-22T11:09:28.105420162Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/subnet.py#815"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/securityGroup:SecurityGroup::aws-infra-us-east-1-VPC1-security-group",
+                "custom": true,
+                "id": "sg-0127a1662dcfcee89",
+                "type": "aws:ec2/securityGroup:SecurityGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name",
+                        "revokeRulesOnDelete"
+                    ],
+                    "description": "Managed by Pulumi",
+                    "egress": [
+                        {
+                            "__defaults": [
+                                "self"
+                            ],
+                            "cidrBlocks": [
+                                "0.0.0.0/0"
+                            ],
+                            "fromPort": 0,
+                            "protocol": "-1",
+                            "self": false,
+                            "toPort": 0
+                        }
+                    ],
+                    "ingress": [
+                        {
+                            "__defaults": [
+                                "self"
+                            ],
+                            "cidrBlocks": [
+                                "0.0.0.0/0"
+                            ],
+                            "description": "SSH",
+                            "fromPort": 22,
+                            "protocol": "tcp",
+                            "self": false,
+                            "toPort": 22
+                        },
+                        {
+                            "__defaults": [
+                                "self"
+                            ],
+                            "cidrBlocks": [
+                                "10.0.0.0/24",
+                                "10.1.0.0/24",
+                                "10.2.0.0/24",
+                                "10.3.0.0/24",
+                                "10.4.0.0/24",
+                                "10.5.0.0/24"
+                            ],
+                            "description": "HTTP",
+                            "fromPort": 5000,
+                            "protocol": "tcp",
+                            "self": false,
+                            "toPort": 5000
+                        }
+                    ],
+                    "name": "aws-infra-us-east-1-VPC1-security-group-587edf0",
+                    "revokeRulesOnDelete": false,
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC1-security-group"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABANm/Z8SG4WBVXIYBeIWAdj23xJ9jyQSEaiYReNjINXKhdIZbsM+T4uL9+RMH8j16Eby5OGJ+Cwz1JKnkL1joFe0xYqmamgYsDzI/HdyogQ=="
+                    },
+                    "vpcId": "vpc-05c966f983a6e4fb0"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":900000000000},\"schema_version\":\"1\"}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:security-group/sg-0127a1662dcfcee89",
+                    "description": "Managed by Pulumi",
+                    "egress": [
+                        {
+                            "cidrBlocks": [
+                                "0.0.0.0/0"
+                            ],
+                            "description": "",
+                            "fromPort": 0,
+                            "ipv6CidrBlocks": [],
+                            "prefixListIds": [],
+                            "protocol": "-1",
+                            "securityGroups": [],
+                            "self": false,
+                            "toPort": 0
+                        }
+                    ],
+                    "id": "sg-0127a1662dcfcee89",
+                    "ingress": [
+                        {
+                            "cidrBlocks": [
+                                "0.0.0.0/0"
+                            ],
+                            "description": "SSH",
+                            "fromPort": 22,
+                            "ipv6CidrBlocks": [],
+                            "prefixListIds": [],
+                            "protocol": "tcp",
+                            "securityGroups": [],
+                            "self": false,
+                            "toPort": 22
+                        },
+                        {
+                            "cidrBlocks": [
+                                "10.0.0.0/24",
+                                "10.1.0.0/24",
+                                "10.2.0.0/24",
+                                "10.3.0.0/24",
+                                "10.4.0.0/24",
+                                "10.5.0.0/24"
+                            ],
+                            "description": "HTTP",
+                            "fromPort": 5000,
+                            "ipv6CidrBlocks": [],
+                            "prefixListIds": [],
+                            "protocol": "tcp",
+                            "securityGroups": [],
+                            "self": false,
+                            "toPort": 5000
+                        }
+                    ],
+                    "name": "aws-infra-us-east-1-VPC1-security-group-587edf0",
+                    "namePrefix": "",
+                    "ownerId": "688664532084",
+                    "revokeRulesOnDelete": false,
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC1-security-group"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAFPYQbsEBa1vN8F8pP3k1gNCQfZzwrx0W72Tm9vJLdwzes9s1cjvHRWqNPDQJ3mcOhO5sujL7rlzHlWcgGP4zzvXvjkoxfPATR+RtkMRjg=="
+                    },
+                    "vpcId": "vpc-05c966f983a6e4fb0"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC1"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "description": null,
+                    "egress": null,
+                    "ingress": null,
+                    "tags": null,
+                    "vpcId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC1"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:28.670872278Z",
+                "modified": "2023-12-22T11:09:28.670872278Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/security_group.py#689"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC2-subnet-1",
+                "custom": true,
+                "id": "subnet-0e8682b48bae631c5",
+                "type": "aws:ec2/subnet:Subnet",
+                "inputs": {
+                    "__defaults": [
+                        "assignIpv6AddressOnCreation",
+                        "enableDns64",
+                        "enableResourceNameDnsARecordOnLaunch",
+                        "enableResourceNameDnsAaaaRecordOnLaunch",
+                        "ipv6Native",
+                        "mapPublicIpOnLaunch"
+                    ],
+                    "assignIpv6AddressOnCreation": false,
+                    "availabilityZone": "eu-central-1a",
+                    "cidrBlock": "10.3.2.0/24",
+                    "enableDns64": false,
+                    "enableResourceNameDnsARecordOnLaunch": false,
+                    "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                    "ipv6Native": false,
+                    "mapPublicIpOnLaunch": false,
+                    "tags": {
+                        "Name": "WebSvcsDevUs-subnet2"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABADO/bKeRLotwUPOsSW0xohjOPYlJA+CGLy+HLalSxVhC4qPAw5B8EfAqJeh2V/uCfkNaHmZfMDFsGJow"
+                    },
+                    "vpcId": "vpc-0093370e123e0d5ef"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000},\"schema_version\":\"1\"}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:subnet/subnet-0e8682b48bae631c5",
+                    "assignIpv6AddressOnCreation": false,
+                    "availabilityZone": "eu-central-1a",
+                    "availabilityZoneId": "euc1-az2",
+                    "cidrBlock": "10.3.2.0/24",
+                    "customerOwnedIpv4Pool": "",
+                    "enableDns64": false,
+                    "enableLniAtDeviceIndex": 0,
+                    "enableResourceNameDnsARecordOnLaunch": false,
+                    "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                    "id": "subnet-0e8682b48bae631c5",
+                    "ipv6CidrBlock": "",
+                    "ipv6CidrBlockAssociationId": "",
+                    "ipv6Native": false,
+                    "mapCustomerOwnedIpOnLaunch": false,
+                    "mapPublicIpOnLaunch": false,
+                    "outpostArn": "",
+                    "ownerId": "688664532084",
+                    "privateDnsHostnameTypeOnLaunch": "ip-name",
+                    "tags": {
+                        "Name": "WebSvcsDevUs-subnet2"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAIvdlW+FyElEKG2WwhqCk/RgORlpmYqJCRjJTBMIHCvg/rphQ6lRVE/1q0YuRf5FLGg9qJTD1SfNfDs9"
+                    },
+                    "vpcId": "vpc-0093370e123e0d5ef"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC2"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "availabilityZone": null,
+                    "cidrBlock": null,
+                    "tags": null,
+                    "vpcId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC2"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:28.862708742Z",
+                "modified": "2023-12-22T11:09:28.862708742Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/subnet.py#815"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/internetGateway:InternetGateway::aws-infra-us-east-1-VPC2",
+                "custom": true,
+                "id": "igw-08fdfdf260139eee8",
+                "type": "aws:ec2/internetGateway:InternetGateway",
+                "inputs": {
+                    "__defaults": [],
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC2"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAKc3mGJd56Jvc/Wbz3IFqJe1yM6Bebx4DZuUmseLEjIf+AxxlPv1CR5jgjkaWzeYAqCauR36xEseWO4ICWTT0g=="
+                    },
+                    "vpcId": "vpc-0093370e123e0d5ef"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":1200000000000,\"update\":1200000000000}}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:internet-gateway/igw-08fdfdf260139eee8",
+                    "id": "igw-08fdfdf260139eee8",
+                    "ownerId": "688664532084",
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC2"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAKqahhLvyaS2zsR1lXx+U5YHsqw43F+VVcioBWA7svubo0rlE2YZdBaFM+DMpH2s3qaB4iKsYbexnHrYD9RBaQ=="
+                    },
+                    "vpcId": "vpc-0093370e123e0d5ef"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC2"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "tags": null,
+                    "vpcId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC2"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:29.386054283Z",
+                "modified": "2023-12-22T11:09:29.386054283Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/internet_gateway.py#280"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC2",
+                "custom": true,
+                "id": "rtb-0fb78a60601e8ecf8",
+                "type": "aws:ec2/routeTable:RouteTable",
+                "inputs": {
+                    "__defaults": [],
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC2"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAJl38Kq/uVOeZLDGheeCYlq8qVKunffmuqKbqVKQRQjxlPQPVcwxI0ydlB/VGMC0d2RGk/oGzl6WWdCJL5EDWQ=="
+                    },
+                    "vpcId": "vpc-0093370e123e0d5ef"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:route-table/rtb-0fb78a60601e8ecf8",
+                    "id": "rtb-0fb78a60601e8ecf8",
+                    "ownerId": "688664532084",
+                    "propagatingVgws": [],
+                    "routes": [
+                        {
+                            "carrierGatewayId": "",
+                            "cidrBlock": "0.0.0.0/0",
+                            "coreNetworkArn": "",
+                            "destinationPrefixListId": "",
+                            "egressOnlyGatewayId": "",
+                            "gatewayId": "igw-08fdfdf260139eee8",
+                            "ipv6CidrBlock": "",
+                            "localGatewayId": "",
+                            "natGatewayId": "",
+                            "networkInterfaceId": "",
+                            "transitGatewayId": "",
+                            "vpcEndpointId": "",
+                            "vpcPeeringConnectionId": ""
+                        }
+                    ],
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC2"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAMXfijrsL6Kn4I/N987ip6ROj/opsF2UQ1MN0f2Tr3c/tfAR7+GltDMpREen74yN7bsXxcdYMpLN+qt+MnEguw=="
+                    },
+                    "vpcId": "vpc-0093370e123e0d5ef"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC2"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "tags": null,
+                    "vpcId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC2"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:30.50989355Z",
+                "modified": "2023-12-22T11:20:12.181597784Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/route_table.py#465"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/keyPair:KeyPair::US_EAST_WebSvcsDev",
+                "custom": true,
+                "id": "US_EAST_WebSvcsDev-c9912d1",
+                "type": "aws:ec2/keyPair:KeyPair",
+                "inputs": {
+                    "__defaults": [
+                        "keyName"
+                    ],
+                    "keyName": "US_EAST_WebSvcsDev-c9912d1",
+                    "publicKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCumKqCg5jT8N9QzzjKnaKHTF4KLhSILE0mekvIMjP1HQMgTHf2FWFmQmVSiD7ab1qAiPBGjPccXCWeNOSLCwyBk3BmTnNEX4c0gbykY0U6C365FUQ1gEGB9AMCUjagyWxwSvVP01jzHJgSHUUA4XObxxVdVAP7iDtVoFBkXdbaIlu22OpBQqShozHxmEC1yBlU5cPAC9jHVICXs/ThofANFGqY0cUDMsVzYXxIKqUXxHwzBbqjf65bjX1d6rG5QY8pQDxJxk2qZ7i9iVXyQTX58lJ/coy1bg6DjCBPFAgHpZH/E/LEFbZATABDNMhtayIknNKirdZLA2HFx4DTvdygY6z+HIFJTXO/u87A9wY8snbaInK/SBHmhqU/Phyhy5ux8jfSeGjFVb3A36jP83+pmqSpJ7CZR1gHHuKVFC5qPSizqJd3NSanTLni/LtpvuKsC18q2wxP0hv90lSCFgQ9JWaAbH8lYVv1Xn1JoyLwyi1Dy7gvINCuNGz143zCLwZiRHCcYcyW+Jd0lDJ1AkLHAOh0Vqu6eiSYHnQLtWump/YEB8WettNMRsyxwB8V3DoynaEGfPz6A8PajXZ4MOvGBsPaWgAYnMA/ltSaw12b2JXRSbCSaiPL3+8BxLaXCf3Q2tzjcnAk8saeROndqP+AogQddSzxM+8Wx4SFc5ZzLQ==\n"
+                },
+                "outputs": {
+                    "__meta": "{\"schema_version\":\"1\"}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:key-pair/US_EAST_WebSvcsDev-c9912d1",
+                    "fingerprint": "07:35:4a:30:9e:92:b5:2a:fe:6e:d8:d1:23:29:8f:c5",
+                    "id": "US_EAST_WebSvcsDev-c9912d1",
+                    "keyName": "US_EAST_WebSvcsDev-c9912d1",
+                    "keyNamePrefix": "",
+                    "keyPairId": "key-0c68b00257b06233a",
+                    "keyType": "rsa",
+                    "publicKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCumKqCg5jT8N9QzzjKnaKHTF4KLhSILE0mekvIMjP1HQMgTHf2FWFmQmVSiD7ab1qAiPBGjPccXCWeNOSLCwyBk3BmTnNEX4c0gbykY0U6C365FUQ1gEGB9AMCUjagyWxwSvVP01jzHJgSHUUA4XObxxVdVAP7iDtVoFBkXdbaIlu22OpBQqShozHxmEC1yBlU5cPAC9jHVICXs/ThofANFGqY0cUDMsVzYXxIKqUXxHwzBbqjf65bjX1d6rG5QY8pQDxJxk2qZ7i9iVXyQTX58lJ/coy1bg6DjCBPFAgHpZH/E/LEFbZATABDNMhtayIknNKirdZLA2HFx4DTvdygY6z+HIFJTXO/u87A9wY8snbaInK/SBHmhqU/Phyhy5ux8jfSeGjFVb3A36jP83+pmqSpJ7CZR1gHHuKVFC5qPSizqJd3NSanTLni/LtpvuKsC18q2wxP0hv90lSCFgQ9JWaAbH8lYVv1Xn1JoyLwyi1Dy7gvINCuNGz143zCLwZiRHCcYcyW+Jd0lDJ1AkLHAOh0Vqu6eiSYHnQLtWump/YEB8WettNMRsyxwB8V3DoynaEGfPz6A8PajXZ4MOvGBsPaWgAYnMA/ltSaw12b2JXRSbCSaiPL3+8BxLaXCf3Q2tzjcnAk8saeROndqP+AogQddSzxM+8Wx4SFc5ZzLQ==",
+                    "tags": {},
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAA2bMwR8ZrXcQEAIwtyz5wzBWJKYlMhxQkNVlwHXlQ=="
+                    }
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::tls:index/privateKey:PrivateKey::aws-infra-us-east-1-VPC2-rsa-key"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "publicKey": [
+                        "urn:pulumi:dev::Igor-Pulumi::tls:index/privateKey:PrivateKey::aws-infra-us-east-1-VPC2-rsa-key"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:31.298804796Z",
+                "modified": "2023-12-22T11:09:31.298804796Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/key_pair.py#334"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/securityGroup:SecurityGroup::aws-infra-us-east-1-VPC2-security-group",
+                "custom": true,
+                "id": "sg-0ac80d85be4929b83",
+                "type": "aws:ec2/securityGroup:SecurityGroup",
+                "inputs": {
+                    "__defaults": [
+                        "name",
+                        "revokeRulesOnDelete"
+                    ],
+                    "description": "Managed by Pulumi",
+                    "egress": [
+                        {
+                            "__defaults": [
+                                "self"
+                            ],
+                            "cidrBlocks": [
+                                "0.0.0.0/0"
+                            ],
+                            "fromPort": 0,
+                            "protocol": "-1",
+                            "self": false,
+                            "toPort": 0
+                        }
+                    ],
+                    "ingress": [
+                        {
+                            "__defaults": [
+                                "self"
+                            ],
+                            "cidrBlocks": [
+                                "0.0.0.0/0"
+                            ],
+                            "description": "SSH",
+                            "fromPort": 22,
+                            "protocol": "tcp",
+                            "self": false,
+                            "toPort": 22
+                        },
+                        {
+                            "__defaults": [
+                                "self"
+                            ],
+                            "cidrBlocks": [
+                                "10.0.0.0/24",
+                                "10.1.0.0/24",
+                                "10.2.0.0/24",
+                                "10.3.0.0/24",
+                                "10.4.0.0/24",
+                                "10.5.0.0/24"
+                            ],
+                            "description": "HTTP",
+                            "fromPort": 5000,
+                            "protocol": "tcp",
+                            "self": false,
+                            "toPort": 5000
+                        }
+                    ],
+                    "name": "aws-infra-us-east-1-VPC2-security-group-1afd9f6",
+                    "revokeRulesOnDelete": false,
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC2-security-group"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAPL0rc2s/dsg0ZoJ7FfcvjMCyhB6eSOnNMxAOP5MJJ9WrmSKmyneE+ZmcQ6VHf1AwC8sI4jXztBYCgczxjqadO1n8cBar1t0ThaJCDM1lw=="
+                    },
+                    "vpcId": "vpc-0093370e123e0d5ef"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":900000000000},\"schema_version\":\"1\"}",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:security-group/sg-0ac80d85be4929b83",
+                    "description": "Managed by Pulumi",
+                    "egress": [
+                        {
+                            "cidrBlocks": [
+                                "0.0.0.0/0"
+                            ],
+                            "description": "",
+                            "fromPort": 0,
+                            "ipv6CidrBlocks": [],
+                            "prefixListIds": [],
+                            "protocol": "-1",
+                            "securityGroups": [],
+                            "self": false,
+                            "toPort": 0
+                        }
+                    ],
+                    "id": "sg-0ac80d85be4929b83",
+                    "ingress": [
+                        {
+                            "cidrBlocks": [
+                                "0.0.0.0/0"
+                            ],
+                            "description": "SSH",
+                            "fromPort": 22,
+                            "ipv6CidrBlocks": [],
+                            "prefixListIds": [],
+                            "protocol": "tcp",
+                            "securityGroups": [],
+                            "self": false,
+                            "toPort": 22
+                        },
+                        {
+                            "cidrBlocks": [
+                                "10.0.0.0/24",
+                                "10.1.0.0/24",
+                                "10.2.0.0/24",
+                                "10.3.0.0/24",
+                                "10.4.0.0/24",
+                                "10.5.0.0/24"
+                            ],
+                            "description": "HTTP",
+                            "fromPort": 5000,
+                            "ipv6CidrBlocks": [],
+                            "prefixListIds": [],
+                            "protocol": "tcp",
+                            "securityGroups": [],
+                            "self": false,
+                            "toPort": 5000
+                        }
+                    ],
+                    "name": "aws-infra-us-east-1-VPC2-security-group-1afd9f6",
+                    "namePrefix": "",
+                    "ownerId": "688664532084",
+                    "revokeRulesOnDelete": false,
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC2-security-group"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAOIZrT7gDa4a4/oW1bEmuqbbEdKL9zn7Tu2Ei6+G9rr1UXmO60T+wEHy9FpiEYRr15jQ+9rjMC/ci4UfYjXFcrCEhWnCPjyqkgdXdDpnJA=="
+                    },
+                    "vpcId": "vpc-0093370e123e0d5ef"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC2"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "description": null,
+                    "egress": null,
+                    "ingress": null,
+                    "tags": null,
+                    "vpcId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/vpc:Vpc::aws-infra-us-east-1-VPC2"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:09:32.335652406Z",
+                "modified": "2023-12-22T11:09:32.335652406Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/security_group.py#689"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTableAssociation:RouteTableAssociation::aws-infra-us-east-1-VPC1-rta-1",
+                "custom": true,
+                "id": "rtbassoc-0607cf7a55f1c9232",
+                "type": "aws:ec2/routeTableAssociation:RouteTableAssociation",
+                "inputs": {
+                    "__defaults": [],
+                    "routeTableId": "rtb-09436b3ac81466a5d",
+                    "subnetId": "subnet-0434d2e54cf1b03ba"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                    "gatewayId": "",
+                    "id": "rtbassoc-0607cf7a55f1c9232",
+                    "routeTableId": "rtb-09436b3ac81466a5d",
+                    "subnetId": "subnet-0434d2e54cf1b03ba"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC1-subnet-1",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC1"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "routeTableId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC1"
+                    ],
+                    "subnetId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC1-subnet-1"
+                    ]
+                },
+                "created": "2023-12-22T11:09:35.571625963Z",
+                "modified": "2023-12-22T11:09:35.571625963Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/route_table_association.py#238"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/route:Route::aws-infra-us-east-1-VPC1-route-igw",
+                "custom": true,
+                "id": "r-rtb-09436b3ac81466a5d1080289494",
+                "type": "aws:ec2/route:Route",
+                "inputs": {
+                    "__defaults": [],
+                    "destinationCidrBlock": "0.0.0.0/0",
+                    "gatewayId": "igw-02c7d35eedf051734",
+                    "routeTableId": "rtb-09436b3ac81466a5d"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                    "carrierGatewayId": "",
+                    "coreNetworkArn": "",
+                    "destinationCidrBlock": "0.0.0.0/0",
+                    "destinationIpv6CidrBlock": "",
+                    "destinationPrefixListId": "",
+                    "egressOnlyGatewayId": "",
+                    "gatewayId": "igw-02c7d35eedf051734",
+                    "id": "r-rtb-09436b3ac81466a5d1080289494",
+                    "instanceId": "",
+                    "instanceOwnerId": "",
+                    "localGatewayId": "",
+                    "natGatewayId": "",
+                    "networkInterfaceId": "",
+                    "origin": "CreateRoute",
+                    "routeTableId": "rtb-09436b3ac81466a5d",
+                    "state": "active",
+                    "transitGatewayId": "",
+                    "vpcEndpointId": "",
+                    "vpcPeeringConnectionId": ""
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/internetGateway:InternetGateway::aws-infra-us-east-1-VPC1",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC1"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "destinationCidrBlock": null,
+                    "gatewayId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/internetGateway:InternetGateway::aws-infra-us-east-1-VPC1"
+                    ],
+                    "routeTableId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC1"
+                    ]
+                },
+                "created": "2023-12-22T11:09:36.040201825Z",
+                "modified": "2023-12-22T11:09:36.040201825Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/route.py#742"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTableAssociation:RouteTableAssociation::aws-infra-us-east-1-VPC1-rta-0",
+                "custom": true,
+                "id": "rtbassoc-02ba2c890defea335",
+                "type": "aws:ec2/routeTableAssociation:RouteTableAssociation",
+                "inputs": {
+                    "__defaults": [],
+                    "routeTableId": "rtb-09436b3ac81466a5d",
+                    "subnetId": "subnet-0206841d1407a477a"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                    "gatewayId": "",
+                    "id": "rtbassoc-02ba2c890defea335",
+                    "routeTableId": "rtb-09436b3ac81466a5d",
+                    "subnetId": "subnet-0206841d1407a477a"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC1-subnet-0",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC1"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "routeTableId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC1"
+                    ],
+                    "subnetId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC1-subnet-0"
+                    ]
+                },
+                "created": "2023-12-22T11:09:36.090586347Z",
+                "modified": "2023-12-22T11:09:36.090586347Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/route_table_association.py#238"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/route:Route::aws-infra-us-east-1-VPC2-route-igw",
+                "custom": true,
+                "id": "r-rtb-0fb78a60601e8ecf81080289494",
+                "type": "aws:ec2/route:Route",
+                "inputs": {
+                    "__defaults": [],
+                    "destinationCidrBlock": "0.0.0.0/0",
+                    "gatewayId": "igw-08fdfdf260139eee8",
+                    "routeTableId": "rtb-0fb78a60601e8ecf8"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                    "carrierGatewayId": "",
+                    "coreNetworkArn": "",
+                    "destinationCidrBlock": "0.0.0.0/0",
+                    "destinationIpv6CidrBlock": "",
+                    "destinationPrefixListId": "",
+                    "egressOnlyGatewayId": "",
+                    "gatewayId": "igw-08fdfdf260139eee8",
+                    "id": "r-rtb-0fb78a60601e8ecf81080289494",
+                    "instanceId": "",
+                    "instanceOwnerId": "",
+                    "localGatewayId": "",
+                    "natGatewayId": "",
+                    "networkInterfaceId": "",
+                    "origin": "CreateRoute",
+                    "routeTableId": "rtb-0fb78a60601e8ecf8",
+                    "state": "active",
+                    "transitGatewayId": "",
+                    "vpcEndpointId": "",
+                    "vpcPeeringConnectionId": ""
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC2",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/internetGateway:InternetGateway::aws-infra-us-east-1-VPC2"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "destinationCidrBlock": null,
+                    "gatewayId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/internetGateway:InternetGateway::aws-infra-us-east-1-VPC2"
+                    ],
+                    "routeTableId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC2"
+                    ]
+                },
+                "created": "2023-12-22T11:09:37.672260097Z",
+                "modified": "2023-12-22T11:09:37.672260097Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/route.py#742"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTableAssociation:RouteTableAssociation::aws-infra-us-east-1-VPC2-rta-1",
+                "custom": true,
+                "id": "rtbassoc-0ada954b9c11210d3",
+                "type": "aws:ec2/routeTableAssociation:RouteTableAssociation",
+                "inputs": {
+                    "__defaults": [],
+                    "routeTableId": "rtb-0fb78a60601e8ecf8",
+                    "subnetId": "subnet-0e8682b48bae631c5"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                    "gatewayId": "",
+                    "id": "rtbassoc-0ada954b9c11210d3",
+                    "routeTableId": "rtb-0fb78a60601e8ecf8",
+                    "subnetId": "subnet-0e8682b48bae631c5"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC2-subnet-1",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC2"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "routeTableId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC2"
+                    ],
+                    "subnetId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC2-subnet-1"
+                    ]
+                },
+                "created": "2023-12-22T11:09:37.741566554Z",
+                "modified": "2023-12-22T11:09:37.741566554Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/route_table_association.py#238"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTableAssociation:RouteTableAssociation::aws-infra-us-east-1-VPC2-rta-0",
+                "custom": true,
+                "id": "rtbassoc-04d359df5f1a92904",
+                "type": "aws:ec2/routeTableAssociation:RouteTableAssociation",
+                "inputs": {
+                    "__defaults": [],
+                    "routeTableId": "rtb-0fb78a60601e8ecf8",
+                    "subnetId": "subnet-0d1ab74fc2d85e987"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                    "gatewayId": "",
+                    "id": "rtbassoc-04d359df5f1a92904",
+                    "routeTableId": "rtb-0fb78a60601e8ecf8",
+                    "subnetId": "subnet-0d1ab74fc2d85e987"
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC2-subnet-0",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC2"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "routeTableId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/routeTable:RouteTable::aws-infra-us-east-1-VPC2"
+                    ],
+                    "subnetId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC2-subnet-0"
+                    ]
+                },
+                "created": "2023-12-22T11:09:37.959840651Z",
+                "modified": "2023-12-22T11:09:37.959840651Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/route_table_association.py#238"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/instance:Instance::aws-infra-us-east-1-VPC2-instance-0",
+                "custom": true,
+                "id": "i-0af4835cba2e97f28",
+                "type": "aws:ec2/instance:Instance",
+                "inputs": {
+                    "__defaults": [
+                        "getPasswordData",
+                        "sourceDestCheck",
+                        "userDataReplaceOnChange"
+                    ],
+                    "ami": "ami-02da8ff11275b7907",
+                    "getPasswordData": false,
+                    "instanceType": "t2.micro",
+                    "keyName": "US_EAST_WebSvcsDev-c9912d1",
+                    "sourceDestCheck": true,
+                    "subnetId": "subnet-0d1ab74fc2d85e987",
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC2-instance-0"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAAn3GXpBa48cOZRM53CY+qQmR93sfARaduAdwSxQZn7Hjx4YKNQK9oumj1Ig/UA36PO0ga+4zPSqOK29bJjZ/lTpOeBkEzoHRnDL"
+                    },
+                    "userData": "#! /bin/bash\nsudo yum update -y\nsudo yum install -y docker\nsudo yum install -y iperf3\nsudo pip3 install requests\nsudo pip3 install urllib3==1.26.15\nsudo pip3 install openai\nsudo service docker start\nsudo usermod -a -G docker ec2-user\nsudo curl https://igor-prosimo.s3.eu-west-1.amazonaws.com/network_testing.py -o /home/ec2-user/network_testing.py\nsudo docker pull iracic82/prosimo-flask-app-labs:latest\nsudo docker pull iracic82/prosimo-iperf3:latest\nsudo docker run -d -p 5000:5000 iracic82/prosimo-flask-app-labs:latest\nsudo docker run -d --name iperf-server -p 5201:5201/tcp -p 5201:5201/udp -p 5201:5201/sctp iracic82/prosimo-iperf3:latest -s\n\ncat \u003c\u003c\"EOT\" \u003e /home/ec2-user/run_script.sh\n#!/bin/bash\n\nwhile true; do\n    # Call your Python script here\n    python3 /home/ec2-user/network_testing.py\n\n    # Sleep for 3 minutes (180 seconds)\n    sleep 180\ndone\nEOT\n\nsudo chmod +x /home/ec2-user/run_script.sh\nsudo chown ec2-user:ec2-user /home/ec2-user/run_script.sh\nsudo /home/ec2-user/run_script.sh \u0026\n\n\n",
+                    "userDataReplaceOnChange": false,
+                    "vpcSecurityGroupIds": [
+                        "sg-0ac80d85be4929b83"
+                    ]
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000,\"update\":600000000000},\"schema_version\":\"1\"}",
+                    "ami": "ami-02da8ff11275b7907",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:instance/i-0af4835cba2e97f28",
+                    "associatePublicIpAddress": true,
+                    "availabilityZone": "eu-central-1a",
+                    "capacityReservationSpecification": {
+                        "capacityReservationPreference": "open",
+                        "capacityReservationTarget": null
+                    },
+                    "cpuCoreCount": 1,
+                    "cpuOptions": {
+                        "amdSevSnp": "",
+                        "coreCount": 1,
+                        "threadsPerCore": 1
+                    },
+                    "cpuThreadsPerCore": 1,
+                    "creditSpecification": {
+                        "cpuCredits": "standard"
+                    },
+                    "disableApiStop": false,
+                    "disableApiTermination": false,
+                    "ebsBlockDevices": [],
+                    "ebsOptimized": false,
+                    "enclaveOptions": {
+                        "enabled": false
+                    },
+                    "ephemeralBlockDevices": [],
+                    "getPasswordData": false,
+                    "hibernation": false,
+                    "hostId": "",
+                    "iamInstanceProfile": "",
+                    "id": "i-0af4835cba2e97f28",
+                    "instanceInitiatedShutdownBehavior": "stop",
+                    "instanceLifecycle": "",
+                    "instanceMarketOptions": null,
+                    "instanceState": "running",
+                    "instanceType": "t2.micro",
+                    "ipv6AddressCount": 0,
+                    "ipv6Addresses": [],
+                    "keyName": "US_EAST_WebSvcsDev-c9912d1",
+                    "launchTemplate": null,
+                    "maintenanceOptions": {
+                        "autoRecovery": "default"
+                    },
+                    "metadataOptions": {
+                        "httpEndpoint": "enabled",
+                        "httpProtocolIpv6": "disabled",
+                        "httpPutResponseHopLimit": 1,
+                        "httpTokens": "optional",
+                        "instanceMetadataTags": "disabled"
+                    },
+                    "monitoring": false,
+                    "networkInterfaces": [],
+                    "outpostArn": "",
+                    "passwordData": "",
+                    "placementGroup": "",
+                    "placementPartitionNumber": 0,
+                    "primaryNetworkInterfaceId": "eni-080ee7c9af87f7faa",
+                    "privateDns": "ip-10-3-1-198.eu-central-1.compute.internal",
+                    "privateDnsNameOptions": {
+                        "enableResourceNameDnsARecord": false,
+                        "enableResourceNameDnsAaaaRecord": false,
+                        "hostnameType": "ip-name"
+                    },
+                    "privateIp": "10.3.1.198",
+                    "publicDns": "",
+                    "publicIp": "18.157.144.98",
+                    "rootBlockDevice": {
+                        "deleteOnTermination": true,
+                        "deviceName": "/dev/xvda",
+                        "encrypted": false,
+                        "iops": 100,
+                        "kmsKeyId": "",
+                        "tags": {},
+                        "throughput": 0,
+                        "volumeId": "vol-0442d030ca95e3810",
+                        "volumeSize": 8,
+                        "volumeType": "gp2"
+                    },
+                    "secondaryPrivateIps": [],
+                    "securityGroups": [],
+                    "sourceDestCheck": true,
+                    "spotInstanceRequestId": "",
+                    "subnetId": "subnet-0d1ab74fc2d85e987",
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC2-instance-0"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAAy59mMRaurPrQAvNvgwCJ1IA6Pz27Rd4eisDspwZ2+QhsivifPKaDDLHXZJxatExIawV4tLTNJ3OPjbABOVx26cpA02B2fgQMXb"
+                    },
+                    "tenancy": "default",
+                    "userData": "5e33bde427b7136a08809e7ce2b98c8458da285d",
+                    "userDataReplaceOnChange": false,
+                    "vpcSecurityGroupIds": [
+                        "sg-0ac80d85be4929b83"
+                    ]
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC2-subnet-0",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/keyPair:KeyPair::US_EAST_WebSvcsDev",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/securityGroup:SecurityGroup::aws-infra-us-east-1-VPC2-security-group"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "ami": null,
+                    "instanceType": null,
+                    "keyName": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/keyPair:KeyPair::US_EAST_WebSvcsDev"
+                    ],
+                    "subnetId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC2-subnet-0"
+                    ],
+                    "tags": null,
+                    "userData": null,
+                    "vpcSecurityGroupIds": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/securityGroup:SecurityGroup::aws-infra-us-east-1-VPC2-security-group"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:10:00.466197971Z",
+                "modified": "2023-12-22T11:20:12.949379121Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/instance.py#2180"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/eip:Eip::aws-infra-us-east-1-VPC2-eip-0",
+                "custom": true,
+                "id": "eipalloc-085670b5868901a78",
+                "type": "aws:ec2/eip:Eip",
+                "inputs": {
+                    "__defaults": [],
+                    "domain": "vpc",
+                    "instance": "i-0af4835cba2e97f28"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"delete\":180000000000,\"read\":900000000000,\"update\":300000000000}}",
+                    "allocationId": "eipalloc-085670b5868901a78",
+                    "associationId": "eipassoc-0ac881961d435d0af",
+                    "carrierIp": "",
+                    "customerOwnedIp": "",
+                    "customerOwnedIpv4Pool": "",
+                    "domain": "vpc",
+                    "id": "eipalloc-085670b5868901a78",
+                    "instance": "i-0af4835cba2e97f28",
+                    "networkBorderGroup": "eu-central-1",
+                    "networkInterface": "eni-080ee7c9af87f7faa",
+                    "privateDns": "ip-10-3-1-198.eu-central-1.compute.internal",
+                    "privateIp": "10.3.1.198",
+                    "publicDns": "ec2-18-157-144-98.eu-central-1.compute.amazonaws.com",
+                    "publicIp": "18.157.144.98",
+                    "publicIpv4Pool": "amazon",
+                    "tags": {},
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAOLw5pnQAVJBbt0dI1ovon2UrUhYQChvHwqnkIp/Bg=="
+                    },
+                    "vpc": true
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/instance:Instance::aws-infra-us-east-1-VPC2-instance-0"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "domain": null,
+                    "instance": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/instance:Instance::aws-infra-us-east-1-VPC2-instance-0"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:10:03.062077656Z",
+                "modified": "2023-12-22T11:10:03.062077656Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/eip.py#760"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/instance:Instance::aws-infra-us-east-1-VPC1-instance-1",
+                "custom": true,
+                "id": "i-0e3b1ab5e517584bf",
+                "type": "aws:ec2/instance:Instance",
+                "inputs": {
+                    "__defaults": [
+                        "getPasswordData",
+                        "sourceDestCheck",
+                        "userDataReplaceOnChange"
+                    ],
+                    "ami": "ami-02da8ff11275b7907",
+                    "getPasswordData": false,
+                    "instanceType": "t2.micro",
+                    "keyName": "US_EAST_WebSvcsProd-0c33bfd",
+                    "sourceDestCheck": true,
+                    "subnetId": "subnet-0434d2e54cf1b03ba",
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC1-instance-1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABALwA+cgbk6ugSC/x+5HKLW/6+bsdhlpr05CcB1WpOA/YZJrq6qPEkSjYo7F3Ew/3eP70bHRgw/fcfhr7R0IVc2OeJj9ID+Smg235"
+                    },
+                    "userData": "#! /bin/bash\nsudo yum update -y\nsudo yum install -y docker\nsudo yum install -y iperf3\nsudo pip3 install requests\nsudo pip3 install urllib3==1.26.15\nsudo pip3 install openai\nsudo service docker start\nsudo usermod -a -G docker ec2-user\nsudo curl https://igor-prosimo.s3.eu-west-1.amazonaws.com/network_testing.py -o /home/ec2-user/network_testing.py\nsudo docker pull iracic82/prosimo-flask-app-labs:latest\nsudo docker pull iracic82/prosimo-iperf3:latest\nsudo docker run -d -p 5000:5000 iracic82/prosimo-flask-app-labs:latest\nsudo docker run -d --name iperf-server -p 5201:5201/tcp -p 5201:5201/udp -p 5201:5201/sctp iracic82/prosimo-iperf3:latest -s\n\ncat \u003c\u003c\"EOT\" \u003e /home/ec2-user/run_script.sh\n#!/bin/bash\n\nwhile true; do\n    # Call your Python script here\n    python3 /home/ec2-user/network_testing.py\n\n    # Sleep for 3 minutes (180 seconds)\n    sleep 180\ndone\nEOT\n\nsudo chmod +x /home/ec2-user/run_script.sh\nsudo chown ec2-user:ec2-user /home/ec2-user/run_script.sh\nsudo /home/ec2-user/run_script.sh \u0026\n\n\n",
+                    "userDataReplaceOnChange": false,
+                    "vpcSecurityGroupIds": [
+                        "sg-0127a1662dcfcee89"
+                    ]
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000,\"update\":600000000000},\"schema_version\":\"1\"}",
+                    "ami": "ami-02da8ff11275b7907",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:instance/i-0e3b1ab5e517584bf",
+                    "associatePublicIpAddress": true,
+                    "availabilityZone": "eu-central-1a",
+                    "capacityReservationSpecification": {
+                        "capacityReservationPreference": "open",
+                        "capacityReservationTarget": null
+                    },
+                    "cpuCoreCount": 1,
+                    "cpuOptions": {
+                        "amdSevSnp": "",
+                        "coreCount": 1,
+                        "threadsPerCore": 1
+                    },
+                    "cpuThreadsPerCore": 1,
+                    "creditSpecification": {
+                        "cpuCredits": "standard"
+                    },
+                    "disableApiStop": false,
+                    "disableApiTermination": false,
+                    "ebsBlockDevices": [],
+                    "ebsOptimized": false,
+                    "enclaveOptions": {
+                        "enabled": false
+                    },
+                    "ephemeralBlockDevices": [],
+                    "getPasswordData": false,
+                    "hibernation": false,
+                    "hostId": "",
+                    "iamInstanceProfile": "",
+                    "id": "i-0e3b1ab5e517584bf",
+                    "instanceInitiatedShutdownBehavior": "stop",
+                    "instanceLifecycle": "",
+                    "instanceMarketOptions": null,
+                    "instanceState": "running",
+                    "instanceType": "t2.micro",
+                    "ipv6AddressCount": 0,
+                    "ipv6Addresses": [],
+                    "keyName": "US_EAST_WebSvcsProd-0c33bfd",
+                    "launchTemplate": null,
+                    "maintenanceOptions": {
+                        "autoRecovery": "default"
+                    },
+                    "metadataOptions": {
+                        "httpEndpoint": "enabled",
+                        "httpProtocolIpv6": "disabled",
+                        "httpPutResponseHopLimit": 1,
+                        "httpTokens": "optional",
+                        "instanceMetadataTags": "disabled"
+                    },
+                    "monitoring": false,
+                    "networkInterfaces": [],
+                    "outpostArn": "",
+                    "passwordData": "",
+                    "placementGroup": "",
+                    "placementPartitionNumber": 0,
+                    "primaryNetworkInterfaceId": "eni-0de1b40924e755e34",
+                    "privateDns": "ip-10-2-2-129.eu-central-1.compute.internal",
+                    "privateDnsNameOptions": {
+                        "enableResourceNameDnsARecord": false,
+                        "enableResourceNameDnsAaaaRecord": false,
+                        "hostnameType": "ip-name"
+                    },
+                    "privateIp": "10.2.2.129",
+                    "publicDns": "",
+                    "publicIp": "3.66.75.32",
+                    "rootBlockDevice": {
+                        "deleteOnTermination": true,
+                        "deviceName": "/dev/xvda",
+                        "encrypted": false,
+                        "iops": 100,
+                        "kmsKeyId": "",
+                        "tags": {},
+                        "throughput": 0,
+                        "volumeId": "vol-07984af7aa8e825ff",
+                        "volumeSize": 8,
+                        "volumeType": "gp2"
+                    },
+                    "secondaryPrivateIps": [],
+                    "securityGroups": [],
+                    "sourceDestCheck": true,
+                    "spotInstanceRequestId": "",
+                    "subnetId": "subnet-0434d2e54cf1b03ba",
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC1-instance-1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAAqdodTFZIMQe8+xFwVFv04TSma4cQn3FyjdoJ9N3tHjb3rUHy51qwR8ZIH9Rub2IDPDBB2mKhvFnsl/ybvOnxatIl40+nT+CN4T"
+                    },
+                    "tenancy": "default",
+                    "userData": "5e33bde427b7136a08809e7ce2b98c8458da285d",
+                    "userDataReplaceOnChange": false,
+                    "vpcSecurityGroupIds": [
+                        "sg-0127a1662dcfcee89"
+                    ]
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC1-subnet-1",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/keyPair:KeyPair::US_EAST_WebSvcsProd",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/securityGroup:SecurityGroup::aws-infra-us-east-1-VPC1-security-group"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "ami": null,
+                    "instanceType": null,
+                    "keyName": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/keyPair:KeyPair::US_EAST_WebSvcsProd"
+                    ],
+                    "subnetId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC1-subnet-1"
+                    ],
+                    "tags": null,
+                    "userData": null,
+                    "vpcSecurityGroupIds": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/securityGroup:SecurityGroup::aws-infra-us-east-1-VPC1-security-group"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:10:08.147224834Z",
+                "modified": "2023-12-22T11:20:13.068525024Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/instance.py#2180"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/instance:Instance::aws-infra-us-east-1-VPC1-instance-0",
+                "custom": true,
+                "id": "i-01a4d8a9d15b2cc04",
+                "type": "aws:ec2/instance:Instance",
+                "inputs": {
+                    "__defaults": [
+                        "getPasswordData",
+                        "sourceDestCheck",
+                        "userDataReplaceOnChange"
+                    ],
+                    "ami": "ami-02da8ff11275b7907",
+                    "getPasswordData": false,
+                    "instanceType": "t2.micro",
+                    "keyName": "US_EAST_WebSvcsProd-0c33bfd",
+                    "sourceDestCheck": true,
+                    "subnetId": "subnet-0206841d1407a477a",
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC1-instance-0"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAI7E/WwdTS79Zhp1pN1z/rYP+NInW7d4aAqktC1E7dievh9QELlXO/O2WohnGiB8rg4n/wfQOu+GXTVDxPDd7/EJrQd0xlLlvJ1H"
+                    },
+                    "userData": "#! /bin/bash\nsudo yum update -y\nsudo yum install -y docker\nsudo yum install -y iperf3\nsudo pip3 install requests\nsudo pip3 install urllib3==1.26.15\nsudo pip3 install openai\nsudo service docker start\nsudo usermod -a -G docker ec2-user\nsudo curl https://igor-prosimo.s3.eu-west-1.amazonaws.com/network_testing.py -o /home/ec2-user/network_testing.py\nsudo docker pull iracic82/prosimo-flask-app-labs:latest\nsudo docker pull iracic82/prosimo-iperf3:latest\nsudo docker run -d -p 5000:5000 iracic82/prosimo-flask-app-labs:latest\nsudo docker run -d --name iperf-server -p 5201:5201/tcp -p 5201:5201/udp -p 5201:5201/sctp iracic82/prosimo-iperf3:latest -s\n\ncat \u003c\u003c\"EOT\" \u003e /home/ec2-user/run_script.sh\n#!/bin/bash\n\nwhile true; do\n    # Call your Python script here\n    python3 /home/ec2-user/network_testing.py\n\n    # Sleep for 3 minutes (180 seconds)\n    sleep 180\ndone\nEOT\n\nsudo chmod +x /home/ec2-user/run_script.sh\nsudo chown ec2-user:ec2-user /home/ec2-user/run_script.sh\nsudo /home/ec2-user/run_script.sh \u0026\n\n\n",
+                    "userDataReplaceOnChange": false,
+                    "vpcSecurityGroupIds": [
+                        "sg-0127a1662dcfcee89"
+                    ]
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000,\"update\":600000000000},\"schema_version\":\"1\"}",
+                    "ami": "ami-02da8ff11275b7907",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:instance/i-01a4d8a9d15b2cc04",
+                    "associatePublicIpAddress": true,
+                    "availabilityZone": "eu-central-1a",
+                    "capacityReservationSpecification": {
+                        "capacityReservationPreference": "open",
+                        "capacityReservationTarget": null
+                    },
+                    "cpuCoreCount": 1,
+                    "cpuOptions": {
+                        "amdSevSnp": "",
+                        "coreCount": 1,
+                        "threadsPerCore": 1
+                    },
+                    "cpuThreadsPerCore": 1,
+                    "creditSpecification": {
+                        "cpuCredits": "standard"
+                    },
+                    "disableApiStop": false,
+                    "disableApiTermination": false,
+                    "ebsBlockDevices": [],
+                    "ebsOptimized": false,
+                    "enclaveOptions": {
+                        "enabled": false
+                    },
+                    "ephemeralBlockDevices": [],
+                    "getPasswordData": false,
+                    "hibernation": false,
+                    "hostId": "",
+                    "iamInstanceProfile": "",
+                    "id": "i-01a4d8a9d15b2cc04",
+                    "instanceInitiatedShutdownBehavior": "stop",
+                    "instanceLifecycle": "",
+                    "instanceMarketOptions": null,
+                    "instanceState": "running",
+                    "instanceType": "t2.micro",
+                    "ipv6AddressCount": 0,
+                    "ipv6Addresses": [],
+                    "keyName": "US_EAST_WebSvcsProd-0c33bfd",
+                    "launchTemplate": null,
+                    "maintenanceOptions": {
+                        "autoRecovery": "default"
+                    },
+                    "metadataOptions": {
+                        "httpEndpoint": "enabled",
+                        "httpProtocolIpv6": "disabled",
+                        "httpPutResponseHopLimit": 1,
+                        "httpTokens": "optional",
+                        "instanceMetadataTags": "disabled"
+                    },
+                    "monitoring": false,
+                    "networkInterfaces": [],
+                    "outpostArn": "",
+                    "passwordData": "",
+                    "placementGroup": "",
+                    "placementPartitionNumber": 0,
+                    "primaryNetworkInterfaceId": "eni-0e7c1bced9fb1a760",
+                    "privateDns": "ip-10-2-1-197.eu-central-1.compute.internal",
+                    "privateDnsNameOptions": {
+                        "enableResourceNameDnsARecord": false,
+                        "enableResourceNameDnsAaaaRecord": false,
+                        "hostnameType": "ip-name"
+                    },
+                    "privateIp": "10.2.1.197",
+                    "publicDns": "",
+                    "publicIp": "3.70.66.191",
+                    "rootBlockDevice": {
+                        "deleteOnTermination": true,
+                        "deviceName": "/dev/xvda",
+                        "encrypted": false,
+                        "iops": 100,
+                        "kmsKeyId": "",
+                        "tags": {},
+                        "throughput": 0,
+                        "volumeId": "vol-0b50ae2839c29d11f",
+                        "volumeSize": 8,
+                        "volumeType": "gp2"
+                    },
+                    "secondaryPrivateIps": [],
+                    "securityGroups": [],
+                    "sourceDestCheck": true,
+                    "spotInstanceRequestId": "",
+                    "subnetId": "subnet-0206841d1407a477a",
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC1-instance-0"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABALEZu3CttAMC3HElYWijfM5JbyLJBViH8Rsf8FafviO3ATWbnvpuSVhxp+7cU+MLODs5Vjqv+8MpdWUrLT8JUncwS0HqlxOlhIbm"
+                    },
+                    "tenancy": "default",
+                    "userData": "5e33bde427b7136a08809e7ce2b98c8458da285d",
+                    "userDataReplaceOnChange": false,
+                    "vpcSecurityGroupIds": [
+                        "sg-0127a1662dcfcee89"
+                    ]
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC1-subnet-0",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/keyPair:KeyPair::US_EAST_WebSvcsProd",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/securityGroup:SecurityGroup::aws-infra-us-east-1-VPC1-security-group"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "ami": null,
+                    "instanceType": null,
+                    "keyName": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/keyPair:KeyPair::US_EAST_WebSvcsProd"
+                    ],
+                    "subnetId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC1-subnet-0"
+                    ],
+                    "tags": null,
+                    "userData": null,
+                    "vpcSecurityGroupIds": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/securityGroup:SecurityGroup::aws-infra-us-east-1-VPC1-security-group"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:10:08.464957745Z",
+                "modified": "2023-12-22T11:20:12.997447325Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/instance.py#2180"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/instance:Instance::aws-infra-us-east-1-VPC2-instance-1",
+                "custom": true,
+                "id": "i-0b7c26d52f37fdce5",
+                "type": "aws:ec2/instance:Instance",
+                "inputs": {
+                    "__defaults": [
+                        "getPasswordData",
+                        "sourceDestCheck",
+                        "userDataReplaceOnChange"
+                    ],
+                    "ami": "ami-02da8ff11275b7907",
+                    "getPasswordData": false,
+                    "instanceType": "t2.micro",
+                    "keyName": "US_EAST_WebSvcsDev-c9912d1",
+                    "sourceDestCheck": true,
+                    "subnetId": "subnet-0e8682b48bae631c5",
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC2-instance-1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAKj2q+aFCUvEnIcd/Zz+aljYTdcmki1vXBS1Dv8Uevosc7UIb/nqE0CAZ1v3YWB0E5xS+QhIYQvuPOrzK4vUuY+PiqANcbGiCqNM"
+                    },
+                    "userData": "#! /bin/bash\nsudo yum update -y\nsudo yum install -y docker\nsudo yum install -y iperf3\nsudo pip3 install requests\nsudo pip3 install urllib3==1.26.15\nsudo pip3 install openai\nsudo service docker start\nsudo usermod -a -G docker ec2-user\nsudo curl https://igor-prosimo.s3.eu-west-1.amazonaws.com/network_testing.py -o /home/ec2-user/network_testing.py\nsudo docker pull iracic82/prosimo-flask-app-labs:latest\nsudo docker pull iracic82/prosimo-iperf3:latest\nsudo docker run -d -p 5000:5000 iracic82/prosimo-flask-app-labs:latest\nsudo docker run -d --name iperf-server -p 5201:5201/tcp -p 5201:5201/udp -p 5201:5201/sctp iracic82/prosimo-iperf3:latest -s\n\ncat \u003c\u003c\"EOT\" \u003e /home/ec2-user/run_script.sh\n#!/bin/bash\n\nwhile true; do\n    # Call your Python script here\n    python3 /home/ec2-user/network_testing.py\n\n    # Sleep for 3 minutes (180 seconds)\n    sleep 180\ndone\nEOT\n\nsudo chmod +x /home/ec2-user/run_script.sh\nsudo chown ec2-user:ec2-user /home/ec2-user/run_script.sh\nsudo /home/ec2-user/run_script.sh \u0026\n\n\n",
+                    "userDataReplaceOnChange": false,
+                    "vpcSecurityGroupIds": [
+                        "sg-0ac80d85be4929b83"
+                    ]
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000,\"update\":600000000000},\"schema_version\":\"1\"}",
+                    "ami": "ami-02da8ff11275b7907",
+                    "arn": "arn:aws:ec2:eu-central-1:688664532084:instance/i-0b7c26d52f37fdce5",
+                    "associatePublicIpAddress": true,
+                    "availabilityZone": "eu-central-1a",
+                    "capacityReservationSpecification": {
+                        "capacityReservationPreference": "open",
+                        "capacityReservationTarget": null
+                    },
+                    "cpuCoreCount": 1,
+                    "cpuOptions": {
+                        "amdSevSnp": "",
+                        "coreCount": 1,
+                        "threadsPerCore": 1
+                    },
+                    "cpuThreadsPerCore": 1,
+                    "creditSpecification": {
+                        "cpuCredits": "standard"
+                    },
+                    "disableApiStop": false,
+                    "disableApiTermination": false,
+                    "ebsBlockDevices": [],
+                    "ebsOptimized": false,
+                    "enclaveOptions": {
+                        "enabled": false
+                    },
+                    "ephemeralBlockDevices": [],
+                    "getPasswordData": false,
+                    "hibernation": false,
+                    "hostId": "",
+                    "iamInstanceProfile": "",
+                    "id": "i-0b7c26d52f37fdce5",
+                    "instanceInitiatedShutdownBehavior": "stop",
+                    "instanceLifecycle": "",
+                    "instanceMarketOptions": null,
+                    "instanceState": "running",
+                    "instanceType": "t2.micro",
+                    "ipv6AddressCount": 0,
+                    "ipv6Addresses": [],
+                    "keyName": "US_EAST_WebSvcsDev-c9912d1",
+                    "launchTemplate": null,
+                    "maintenanceOptions": {
+                        "autoRecovery": "default"
+                    },
+                    "metadataOptions": {
+                        "httpEndpoint": "enabled",
+                        "httpProtocolIpv6": "disabled",
+                        "httpPutResponseHopLimit": 1,
+                        "httpTokens": "optional",
+                        "instanceMetadataTags": "disabled"
+                    },
+                    "monitoring": false,
+                    "networkInterfaces": [],
+                    "outpostArn": "",
+                    "passwordData": "",
+                    "placementGroup": "",
+                    "placementPartitionNumber": 0,
+                    "primaryNetworkInterfaceId": "eni-0bead22d481c07850",
+                    "privateDns": "ip-10-3-2-84.eu-central-1.compute.internal",
+                    "privateDnsNameOptions": {
+                        "enableResourceNameDnsARecord": false,
+                        "enableResourceNameDnsAaaaRecord": false,
+                        "hostnameType": "ip-name"
+                    },
+                    "privateIp": "10.3.2.84",
+                    "publicDns": "",
+                    "publicIp": "3.74.101.6",
+                    "rootBlockDevice": {
+                        "deleteOnTermination": true,
+                        "deviceName": "/dev/xvda",
+                        "encrypted": false,
+                        "iops": 100,
+                        "kmsKeyId": "",
+                        "tags": {},
+                        "throughput": 0,
+                        "volumeId": "vol-0e44f6f2bf832a92a",
+                        "volumeSize": 8,
+                        "volumeType": "gp2"
+                    },
+                    "secondaryPrivateIps": [],
+                    "securityGroups": [],
+                    "sourceDestCheck": true,
+                    "spotInstanceRequestId": "",
+                    "subnetId": "subnet-0e8682b48bae631c5",
+                    "tags": {
+                        "Name": "aws-infra-us-east-1-VPC2-instance-1"
+                    },
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABADy6NRJ970Gg4u+iEmWDI8S+6WG8RF017qcnHOjnVNeosfBpc63bDVpqXzDS9NFM/7iyeSFwCiJwpJg9xJdS+c4tTeuiNeimA+7T"
+                    },
+                    "tenancy": "default",
+                    "userData": "5e33bde427b7136a08809e7ce2b98c8458da285d",
+                    "userDataReplaceOnChange": false,
+                    "vpcSecurityGroupIds": [
+                        "sg-0ac80d85be4929b83"
+                    ]
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC2-subnet-1",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/keyPair:KeyPair::US_EAST_WebSvcsDev",
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/securityGroup:SecurityGroup::aws-infra-us-east-1-VPC2-security-group"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "ami": null,
+                    "instanceType": null,
+                    "keyName": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/keyPair:KeyPair::US_EAST_WebSvcsDev"
+                    ],
+                    "subnetId": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/subnet:Subnet::aws-infra-us-east-1-VPC2-subnet-1"
+                    ],
+                    "tags": null,
+                    "userData": null,
+                    "vpcSecurityGroupIds": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/securityGroup:SecurityGroup::aws-infra-us-east-1-VPC2-security-group"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:10:09.841840352Z",
+                "modified": "2023-12-22T11:20:13.023585319Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/instance.py#2180"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/eip:Eip::aws-infra-us-east-1-VPC1-eip-1",
+                "custom": true,
+                "id": "eipalloc-0277c0470cc456a27",
+                "type": "aws:ec2/eip:Eip",
+                "inputs": {
+                    "__defaults": [],
+                    "domain": "vpc",
+                    "instance": "i-0e3b1ab5e517584bf"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"delete\":180000000000,\"read\":900000000000,\"update\":300000000000}}",
+                    "allocationId": "eipalloc-0277c0470cc456a27",
+                    "associationId": "eipassoc-0e07231357e726fd9",
+                    "carrierIp": "",
+                    "customerOwnedIp": "",
+                    "customerOwnedIpv4Pool": "",
+                    "domain": "vpc",
+                    "id": "eipalloc-0277c0470cc456a27",
+                    "instance": "i-0e3b1ab5e517584bf",
+                    "networkBorderGroup": "eu-central-1",
+                    "networkInterface": "eni-0de1b40924e755e34",
+                    "privateDns": "ip-10-2-2-129.eu-central-1.compute.internal",
+                    "privateIp": "10.2.2.129",
+                    "publicDns": "ec2-3-66-75-32.eu-central-1.compute.amazonaws.com",
+                    "publicIp": "3.66.75.32",
+                    "publicIpv4Pool": "amazon",
+                    "tags": {},
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABADn8D4GK9Yt1l8MEL0ex1eycGKWyA5Qm1LcQiKA6GQ=="
+                    },
+                    "vpc": true
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/instance:Instance::aws-infra-us-east-1-VPC1-instance-1"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "domain": null,
+                    "instance": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/instance:Instance::aws-infra-us-east-1-VPC1-instance-1"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:10:11.212116802Z",
+                "modified": "2023-12-22T11:10:11.212116802Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/eip.py#760"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/eip:Eip::aws-infra-us-east-1-VPC1-eip-0",
+                "custom": true,
+                "id": "eipalloc-0ba6e1957bbb3bf06",
+                "type": "aws:ec2/eip:Eip",
+                "inputs": {
+                    "__defaults": [],
+                    "domain": "vpc",
+                    "instance": "i-01a4d8a9d15b2cc04"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"delete\":180000000000,\"read\":900000000000,\"update\":300000000000}}",
+                    "allocationId": "eipalloc-0ba6e1957bbb3bf06",
+                    "associationId": "eipassoc-0448ebef692581215",
+                    "carrierIp": "",
+                    "customerOwnedIp": "",
+                    "customerOwnedIpv4Pool": "",
+                    "domain": "vpc",
+                    "id": "eipalloc-0ba6e1957bbb3bf06",
+                    "instance": "i-01a4d8a9d15b2cc04",
+                    "networkBorderGroup": "eu-central-1",
+                    "networkInterface": "eni-0e7c1bced9fb1a760",
+                    "privateDns": "ip-10-2-1-197.eu-central-1.compute.internal",
+                    "privateIp": "10.2.1.197",
+                    "publicDns": "ec2-3-70-66-191.eu-central-1.compute.amazonaws.com",
+                    "publicIp": "3.70.66.191",
+                    "publicIpv4Pool": "amazon",
+                    "tags": {},
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABAHwHFExet/7DwkOgX/CyJVcJGoaFZoucD8wBXieO6g=="
+                    },
+                    "vpc": true
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/instance:Instance::aws-infra-us-east-1-VPC1-instance-0"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "domain": null,
+                    "instance": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/instance:Instance::aws-infra-us-east-1-VPC1-instance-0"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:10:11.579006147Z",
+                "modified": "2023-12-22T11:10:11.579006147Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/eip.py#760"
+            },
+            {
+                "urn": "urn:pulumi:dev::Igor-Pulumi::aws:ec2/eip:Eip::aws-infra-us-east-1-VPC2-eip-1",
+                "custom": true,
+                "id": "eipalloc-073419d28a72b95ff",
+                "type": "aws:ec2/eip:Eip",
+                "inputs": {
+                    "__defaults": [],
+                    "domain": "vpc",
+                    "instance": "i-0b7c26d52f37fdce5"
+                },
+                "outputs": {
+                    "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"delete\":180000000000,\"read\":900000000000,\"update\":300000000000}}",
+                    "allocationId": "eipalloc-073419d28a72b95ff",
+                    "associationId": "eipassoc-0a14a1138d45112a7",
+                    "carrierIp": "",
+                    "customerOwnedIp": "",
+                    "customerOwnedIpv4Pool": "",
+                    "domain": "vpc",
+                    "id": "eipalloc-073419d28a72b95ff",
+                    "instance": "i-0b7c26d52f37fdce5",
+                    "networkBorderGroup": "eu-central-1",
+                    "networkInterface": "eni-0bead22d481c07850",
+                    "privateDns": "ip-10-3-2-84.eu-central-1.compute.internal",
+                    "privateIp": "10.3.2.84",
+                    "publicDns": "ec2-3-74-101-6.eu-central-1.compute.amazonaws.com",
+                    "publicIp": "3.74.101.6",
+                    "publicIpv4Pool": "amazon",
+                    "tags": {},
+                    "tagsAll": {
+                        "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                        "ciphertext": "AAABACPchFrBj0llHSRFk9/I+7nYvUbzd/ezxGBEpZObyA=="
+                    },
+                    "vpc": true
+                },
+                "parent": "urn:pulumi:dev::Igor-Pulumi::pulumi:pulumi:Stack::Igor-Pulumi-dev",
+                "dependencies": [
+                    "urn:pulumi:dev::Igor-Pulumi::aws:ec2/instance:Instance::aws-infra-us-east-1-VPC2-instance-1"
+                ],
+                "provider": "urn:pulumi:dev::Igor-Pulumi::pulumi:providers:aws::default_6_15_0::a7f89c0a-6625-4652-8f92-7ac2fcf7848f",
+                "propertyDependencies": {
+                    "domain": null,
+                    "instance": [
+                        "urn:pulumi:dev::Igor-Pulumi::aws:ec2/instance:Instance::aws-infra-us-east-1-VPC2-instance-1"
+                    ]
+                },
+                "additionalSecretOutputs": [
+                    "tagsAll"
+                ],
+                "created": "2023-12-22T11:10:12.194047065Z",
+                "modified": "2023-12-22T11:10:12.194047065Z",
+                "sourcePosition": "project:///venv/lib/python3.11/site-packages/pulumi_aws/ec2/eip.py#760"
+            }
+        ]
+    }
+}

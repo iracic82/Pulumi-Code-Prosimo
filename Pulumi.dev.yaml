@@ -1,0 +1,2 @@
+config:
+  Igor-Pulumi:cloud-provider: AWS

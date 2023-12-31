@@ -1,0 +1,72 @@
+{
+	"eu-north": {
+		"VNET1": {
+			"azure_resource_group" :"ABinBev-Prosimo",
+			"azure_vnet_name": "VNET_A",
+			"nsg_name": "nsg_a",
+			"azure_vnet_cidr": "10.40.0.0/16",
+			"azure_instance_name": "vneta",
+			"azure_vm_size": "Standard_D2s_v3",
+			"azure_server_key_pair_name": "vneta_kp",
+			"azure_admin_username": "abinbev",
+			"subnets": [
+				{
+					"azure_subnet_name": "vnet_a_subnet_1",
+					"azure_subnet_cidr": [
+						"10.40.1.0/24"
+					],
+					"azure_private_ip": "10.40.1.100",
+					"azure_nic": "nic_a"
+				}
+			]
+		},
+		"VNET2": {
+			"azure_resource_group": "ABinBev-Prosimo",
+			"azure_vnet_name": "VNET_B",
+			"nsg_name": "nsg_b",
+			"azure_vnet_cidr": "10.40.0.0/16",
+			"azure_instance_name": "vnetb",
+			"azure_server_key_pair_name": "vnetb_kp",
+			"azure_vm_size": "Standard_D2s_v3",
+			"azure_admin_username": "abinbev",
+			"subnets": [
+				{
+					"azure_subnet_name": "vnet_b_subnet_1",
+					"azure_subnet_cidr": [
+						"10.40.2.0/24"
+					],
+					"azure_private_ip": "10.40.2.100",
+					"azure_nic": "nic_b"
+				}
+			]
+		},
+		"VNET3": {
+			"azure_resource_group": "ABinBev-Prosimo",
+			"azure_vnet_name": "VNET_C",
+			"nsg_name": "nsg_c",
+			"azure_vnet_cidr": "10.50.0.0/16",
+			"azure_instance_name": "vnetc",
+			"azure_server_key_pair_name": "vnetc_kp",
+			"azure_vm_size": "Standard_D2s_v3",
+			"azure_admin_username": "abinbev",
+			"subnets": [
+				{
+					"azure_subnet_name": "vnet_c_subnet_1",
+					"azure_subnet_cidr": [
+						"10.50.1.0/24"
+					],
+					"azure_private_ip": "10.50.1.100",
+					"azure_nic": "nic_c_1"
+				},
+				{
+					"azure_subnet_name": "vnet_c_subnet_2",
+					"azure_subnet_cidr": [
+						"10.50.2.0/24"
+					],
+					"azure_private_ip": "10.50.2.100",
+					"azure_nic": "nic_c_2"
+				}
+			]
+		}
+	}
+}
