@@ -18,7 +18,7 @@ pulumi up
 
 ### For Azure
 
-To configure and deploy to AWS, use the following commands:
+To configure and deploy to Azure, use the following commands:
 
 ```bash
 pulumi config set cloud-provider Azure
@@ -29,7 +29,9 @@ pulumi up
 
 ### For Both AWS and Azure
 
-If no configuration is set, the script defaults to AWS.
+For both or defaulting to AWS (if no configuration is set):
+
+Simply run pulumi up without setting the cloud-provider configuration.
 
 ```bash
 
