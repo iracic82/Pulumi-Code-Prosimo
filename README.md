@@ -36,4 +36,59 @@ Simply run pulumi up without setting the cloud-provider configuration.
 ```bash
 
 pulumi up
+```
+
+
+
+
+
+
+
+
+Pulumi offers a variety of commands that help you manage, monitor, and understand the resources you create. Here's a list of useful Pulumi CLI commands for these purposes:
+1. pulumi up
+* Usage: Deploys your stack, creating or updating resources as defined in your Pulumi program.
+* Command:```bash pulumi up  ``` 
+2. pulumi preview
+* Usage: Shows a preview of the changes that Pulumi plans to make to your infrastructure, without actually making them.
+* Command:bash  Copy codepulumi preview   
+3. pulumi refresh
+* Usage: Refreshes the state of your stack to align it with the actual state of resources in the cloud. Useful if external changes were made to the cloud resources.
+* Command:bash  Copy codepulumi refresh   
+4. pulumi stack
+* Usage: Provides information about your Pulumi stack.
+* Command:bash  Copy codepulumi stack   
+    * For detailed resource information: pulumi stack --show-urns
+5. pulumi config
+* Usage: Manages configuration for the current stack. You can view, set, or remove configuration values.
+* Command:bash  Copy codepulumi config   
+6. pulumi destroy
+* Usage: Destroys all resources managed by the current stack. Use with caution.
+* Command:bash  Copy codepulumi destroy   
+7. pulumi logs
+* Usage: Fetches logs for the resources in the current stack. This is useful for debugging and understanding the behavior of your resources.
+* Command:bash  Copy codepulumi logs   
+    * For real-time logs: pulumi logs -f
+8. pulumi history
+* Usage: Displays the history of updates to the stack, including who performed each update and when.
+* Command:bash  Copy codepulumi history   
+9. pulumi stack output
+* Usage: Displays the outputs of the current stack. Outputs can include important data like IP addresses, DNS names, and other resource identifiers.
+* Command:bash  Copy codepulumi stack output   
+10. pulumi whoami
+* Usage: Displays the Pulumi username of the current user.
+* Command:bash  Copy codepulumi whoami   
+11. pulumi policy
+* Usage: Manages policy-as-code (if you're using Pulumi's CrossGuard feature). It's useful for enforcing certain rules and practices in your infrastructure.
+* Command:bash  Copy codepulumi policy   
+12. pulumi plugin
+* Usage: Manages plugins in your Pulumi environment. Plugins are used for interacting with various cloud providers.
+* Command:bash  Copy codepulumi plugin   
+Notes for Using These Commands:
+* Stack Context: Many of these commands operate within the context of a specific Pulumi stack. Ensure you're in the correct stack context or specify the stack name in the command.
+* Project Directory: Run these commands in your Pulumi project directory, where your Pulumi.yaml file is located.
+* Documentation: Consult the Pulumi documentation for more details and options for each command.
+These commands cover most of the typical actions you'd perform in a development environment when working with Pulumi to manage cloud resources.
+
+
 
